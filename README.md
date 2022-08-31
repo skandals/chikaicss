@@ -40,3 +40,4 @@
 #31 Aug 2022 
 
 - Fixed navbar form alignment
+- Fixed color opcaity
