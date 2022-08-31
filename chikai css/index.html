@@ -17,9 +17,14 @@
             </div>
 
                 <ul class="nav-menu right">
-                    <li class="nav-item"><a href="">Home</a></li>
-                    <li class="nav-item"><a href="">Contact</a></li>
-                    <li class="nav-item"><a href="#">About us</a></li>
+                    <form method="post">
+                            <div class="input-field">
+                                <input type="text" class="form-control" placeholder="Enter name">
+                            </div>                            
+                            <div class="input-field">
+                                <input type="submit" class="btn green" value="sign up">
+                            </div>
+                    </form>
                 </ul>
         </div>
     </div>
@@ -29,21 +34,28 @@
 </div>
 
 
-<div class="container text-center mt-5">
+<div class="container mt-5">
     <form>
-        <div class="input-fields border-sm-dark border-radius-sm">
-            <input type="file" class="form-control text-center p-1">
+        <div class="input-field">
+            <input type="file" class="form-control" placeholder="Upload file">
         </div>
-        <div class="input-fields mt-2">
-            <button class="btn blue w-100 mb-3">Upload</button>
-            <button class="btn red w-100">Upload</button>
+        <div class="input-field my-2">
+            <input type="text" placeholder="Description" class="form-control">
+        </div>
 
+        <div class="input-field">
+            <textarea class="textarea-control" placeholder="Enter your tags"></textarea>
         </div>
+
+        <div class="my-2">
+            <button class="btn blue">Upload</button>
+        </div>
+
     </form>
 </div>
 
 
-<div class="container-fluid my-5">
+<!-- <div class="container-fluid my-5">
     <div class="row gap-2 mx-2">
         <div class="col-12 blue"></div>
         <div class="col-12 red"></div>
@@ -54,9 +66,10 @@
         <div class="col-12 gray"></div>
 
     </div>
-</div>
+</div> -->
 
 
+<!-- 
 <div class="container my-3">
     <div class="row mx-2 gap-2">
 
@@ -126,10 +139,10 @@
 
     </div>
 </div>
-</div>
+</div> -->
 
 
-<div class="container-fluid text-center orange p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, placeat!</div>
+<div class="container-fluid text-center orange text-white p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, placeat!</div>
 
 <!-- footer -->
 <section class="container-fluid footer dark text-white p-2">

@@ -2,8 +2,9 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    width: 100%;
+    width: auto;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 /* navbar (incomplete) */
@@ -55,13 +56,14 @@ body {
     transition: 0.5s;
 }
 
-.navbar ul:-moz-any(.right) + .navbar ul:-webkit-any(.right) {
+.navbar ul:-moz-any(.right) {
     margin-right: 10px;
 }
 
-/* .navbar ul:-webkit-any(.right) {
+.navbar ul:-webkit-any(.right) {
     margin-right: 10px;
-} */
+}
+
 
 /* display */
 
@@ -89,34 +91,85 @@ body {
     display: inline-flex;
 }
 
-
 /* forms (incomplete)  */
-.form-inputs {
-    width: 100%;
+/* input decoration (borders, width and height) should be fixed */
+.input-field {
+    border: thin solid gray;
+    border-radius: 5px;
 }
 
 .form-control {
-   width: 300px;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.form-control::placeholder {
-    text-align: center;
-    font-size: medium;
+.input-field input[type="file"] {
+    width: 100%;
+    margin: 10px;
+    padding-top: 15px;
+    min-height: 50px;
+}
+
+.textarea-control {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-control::placeholder, .textarea-control::placeholder {
+    font-size:medium;
+}
+
+form {
+    width: auto;
 }
 
 textarea {
     resize: none;
     height: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* navbar form */
+.navbar form {
+    display: inline-flex;
+}
 
-/* text custom */
+.navbar form .input-field {
+    box-sizing: border-box;
+    border: none;
+    margin-inline: 5px;
+}
 
+.navbar form .form-control {
+    height:35px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navbar form button, .navbar form input[type="submit"] {
+    height:35px;
+    padding: 5px;
+}
+
+/* text alignment */
 .text-center {
-    text-align: center !important;
     display: grid;
     justify-content: center;
     align-items: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
 }
 
 /* margin */
@@ -326,7 +379,7 @@ textarea {
 }
 
 .container {
-  margin-inline: 1em;
+  margin-inline: 2em;
   width: auto;
 }
 
@@ -370,7 +423,7 @@ textarea {
 
 /* text colors */
 .text-primary {
-    color:rgb(36, 91, 255);
+    color:rgb(65, 112, 255);
 }
 
 .text-red {
@@ -401,6 +454,23 @@ textarea {
     color: rgb(169, 169, 169);
 }
 
+/* width */
+.w-25 {
+    width: 25%; 
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
 /* vertical height */
 .vh-100 {
     min-height: 100vh;
@@ -427,7 +497,6 @@ textarea {
 .btn {
     border:none;
     height:40px;
-    width: auto;
     cursor: pointer;
     text-decoration: none;
     border-radius: 3px;
@@ -631,32 +700,20 @@ textarea {
 
 .spinner-container::after{
     content: "";
-    height:fit-content;
-    width: fit-content;
-    border: 10px solid grey;    
-    border-bottom-color: orange;
+    height:auto;
+    width: auto;
+    border: 10px solid transparent;    
+    border-bottom-color: rgb(0, 201, 0);
+    border-top-color: rgb(0, 201, 0);
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
 
-
-/* width */
-.w-25 {
-    width: 25%; 
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
 }
-
-.w-50 {
-    width: 50%;
-}
-
-.w-75 {
-    width: 75%;
-}
-
-.w-100 {
-    width: 100%;
-}
-
 
 /* borders */
 .border-none {
