@@ -161,7 +161,6 @@ textarea {
 .text-center {
     display: grid;
     justify-content: center;
-    align-items: center;
 }
 
 .text-left {
@@ -493,6 +492,19 @@ textarea {
     height: 100%;
 }
 
+/* remove default href, ul, li */
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
 /* btn */
 .btn {
     border:none;
@@ -807,23 +819,28 @@ textarea {
 }
 
 .justify-content-center {
+    display:grid;
     justify-content: center;
 }
 
 .justify-content-end {
+    display:grid;
     justify-content: end;
 }
 
 /* align */
 .align-items-start {
+    display:grid;
     align-items: flex-start;
 }
 
 .align-items-center {
+    display:grid;
     align-items: center;
 }
 
 .align-items-end {
+    display:grid;
     align-items: flex-end;
 }
 
