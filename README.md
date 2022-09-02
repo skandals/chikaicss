@@ -41,3 +41,13 @@
 
 - Fixed navbar form alignment
 - Fixed color opcaity
+
+#1 Sept 2022
+
+- Added alerts
+- Added color variables
+- Added tables
+
+#2 Sept 2022 
+ 
+ - Added modal

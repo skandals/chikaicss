@@ -1,3 +1,20 @@
+
+/* bg color variables */
+:root{
+ 
+    --dark: rgb(46, 46, 46);
+    --blue: rgb(36, 91, 255);
+    --red: rgb(255, 60, 60);
+    --orange:rgb(255, 100, 44);
+    --green: rgb(29, 170, 29);
+    --white: white;
+    --yellow: rgb(211, 211, 0);
+    --gray: gray;
+    --lightgray: lightgray;
+
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -7,10 +24,44 @@ body {
     box-sizing: border-box;
 }
 
+
+/* background colors */
+.dark {
+    background: var(--dark);
+}
+
+.blue {
+    background: var(--blue);
+}
+
+.red {
+    background: var(--red);
+}
+
+.green {
+    background: var(--green);
+}
+
+.orange {
+    background: var(--orange);
+}
+
+.yellow {
+    background: var(--yellow);
+}
+
+.gray {
+    background: var(--gray);
+}
+
+.lightgray {
+    background: var(--lightgray);
+}
+
 /* navbar (incomplete) */
 /* should be fixed with nav-menu alignment */
 .navbar {
-    background: rgb(46, 46, 46);
+    background: var(--dark);
     height:60px;
     line-height: 60px;
     width: 100%;
@@ -24,7 +75,7 @@ body {
 
 .logo, .logo span, .logo p, .logo i {
     font-size: 20px;
-    color:white;
+    color: var(--white);
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: left;
@@ -47,12 +98,12 @@ body {
 
 .nav-item a {
     text-decoration: none;
-    color:rgba(255, 255, 255, 0.597);
+    color: var(--lightgray);
     margin-inline: 5px;
 }
 
 .nav-item a:hover {
-    color: rgba(255, 255, 255, 0.952);
+    color: var(--lightgray);
     transition: 0.5s;
 }
 
@@ -68,27 +119,27 @@ body {
 /* display */
 
 .d-none {
-    display: none;
+    display: none !important;
 }
 
 .d-block {
-    display: block;
+    display: block !important;
 }
 
 .d-inline-block {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .d-inline {
-    display: inline;
+    display: inline !important;
 }
 
 .d-flex {
-    display: flex;
+    display: flex !important;
 }
 
 .d-inline-flex {
-    display: inline-flex;
+    display: inline-flex !important;
 }
 
 /* forms (incomplete)  */
@@ -101,7 +152,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border:thin solid gray;
+    border:thin solid var(--lightgray);
     border-radius: 5px;
 
 }
@@ -398,69 +449,39 @@ textarea {
   background-color: transparent;
 }
 
-.blue {
-    background-color: royalblue;
-}
 
-.red {
-    background-color: rgb(255, 60, 60)
-}
-
-.orange {
-    background-color: rgb(255, 100, 44);
-}
-
-.green {
-    background-color: rgb(29, 170, 29);
-}
-
-.dark {
-    background-color: rgb(46, 46, 46);
-}
-
-.white {
-    background-color: white;
-}
-
-.yellow {
-    background-color: rgb(211, 211, 0);
-}
-
-.gray {
-    background-color: gray;
-}
 
 /* text colors */
 .text-primary {
-    color:rgb(65, 112, 255);
+    color:var(--blue);
 }
 
 .text-red {
-    color: rgb(255, 60, 60);
+    color: var(--red);
 }
 
 .text-green {
-    color: rgb(30, 190, 30); 
+    color: var(--green); 
 }
 
 .text-orange {
-    color: rgb(255, 126, 79);
+    color: var(--orange);
 }
 
 .text-dark {
-    color: rgb(46, 46, 46);
+    color: var(--dark);
 }
 
 .text-white {
-    color:white;
+    color:var(--white);
 }
 
 .text-yellow {
-    color: rgb(230, 230, 0);
+    color: var(--yellow);
 }
 
 .text-gray {
-    color: gray;
+    color: var(--gray);
 }
 
 /* width */
@@ -527,7 +548,7 @@ li a {
 }
 
 .nav-item a[class="btn"] {
-    background-color: gray;
+    background-color: var(--green);
     height:40px;
     text-decoration: none;
     border-radius: 3px;
@@ -543,7 +564,7 @@ li a {
     width: 100%;
     text-decoration: none;
     border-radius: 3px;
-    color: white;
+    color: var(--white);
     padding: 0.5em;
 }
 
@@ -552,7 +573,7 @@ li a {
     width: 100%;
     text-decoration: none;
     border-radius: 3px;
-    color: white;
+    color: var(--white);
     padding: 10px;
 }
 
@@ -561,8 +582,8 @@ li a {
 .card {
     border: 0.5px solid gray;
     box-sizing: border-box;
-    box-shadow: 0px 3px 0px 0px lightgrey;
-    background-color: white;
+    box-shadow: 0px 3px 0px 0px var(--lighgray);
+    background-color: var(--white);
     width: 100%;
     border-radius: 5px;
     text-overflow: ellipsis;
@@ -725,8 +746,8 @@ li a {
     height:auto;
     width: auto;
     border: 10px solid transparent;    
-    border-bottom-color: rgb(0, 201, 0);
-    border-top-color: rgb(0, 201, 0);
+    border-bottom-color: var(--green);
+    border-top-color: var(--green);
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -743,43 +764,43 @@ li a {
 }
 
 .border-sm-dark {
-    border: thin solid rgb(46, 46, 46);
+    border: thin solid var(--dark);
 }
 
 .border-lg-dark {
-    border: thick solid rgb(46, 46, 46);
+    border: thick solid var(--dark);
 }
 
 .border-sm-red {
-    border: thin solid rgb(255, 60, 60);
+    border: thin solid var(--red);
 }
 
 .border-lg-red {
-    border: thick solid rgb(255, 60, 60);
+    border: thick solid var(--red);
 }
 
 .border-sm-blue {
-    border: thin solid rgb(36, 91, 255);
+    border: thin solid var(--blue);
 }
 
 .border-lg-blue {
-    border: thick solid rgb(36, 91, 255);
+    border: thick solid var(--blue);
 }
 
 .border-sm-green {
-    border: thin solid rgb(29, 170, 29);
+    border: thin solid var(--green);
 }
 
 .border-lg-green {
-    border: thick solid rgb(29, 170, 29);
+    border: thick solid var(--green);
 }
 
 .border-sm-orange {
-    border: thin solid rgb(255, 120, 71);
+    border: thin solid var(--orange);
 }
 
 .border-lg-orange {
-    border: thick solid rgb(255, 120, 71);
+    border: thick solid var(--orange);
 }
 
 .border-radius-25 {
@@ -986,7 +1007,7 @@ table {
 
 th {
     font-weight: medium;    
-    border-bottom: 2px solid lightgray;
+    border-bottom: 2px solid var(--lightgray);
     padding-bottom: 10px;
     font-family: 'Open sans';
 }
@@ -999,14 +1020,14 @@ td {
 
 .table tbody tr {
     background-color: none;
-    border-bottom: thin solid lightgray;
+    border-bottom: thin solid var(--lightgray);
     padding:5px;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
 .table-striped tbody tr:nth-child(odd) {
-    background-color: lightgray; 
+    background-color: var(--lightgray); 
 }
 
 
@@ -1016,82 +1037,82 @@ td {
 .alert {
     border-radius: 3px;
     padding: 5px;
-    color: white;
+    color: var(--white);
     width: auto;
     position: relative;
     margin: 0;
 }
 
 .alert:-moz-any(.dark)  {
-    border-left: 10px gray;
+    border-left: 10px var(--gray);
     border-left-style:groove;
 }
 
 .alert:-webkit-any(.dark) {
-    border-left: 10px gray;
+    border-left: 10px var(--gray);
     border-left-style:groove;
 }
 
 .alert:-moz-any(.red)  {
-    border-left: 10px red;
+    border-left: 10px var(--red);
     border-left-style:groove;
 }
 
 .alert:-webkit-any(.red) {
-    border-left: 10px red;
+    border-left: 10px var(--red);
     border-left-style:groove;
 }
 
 .alert:-moz-any(.blue)  {
-    border-left: 10px blue;
+    border-left: 10px var(--blue);
     border-left-style:groove;
 }
 
 .alert:-webkit-any(.blue) {
-    border-left: 10px blue;
+    border-left: 10px var(--blue);
     border-left-style:groove;
 }
 
 
 .alert:-moz-any(.green)  {
-    border-left: 10px green;
+    border-left: 10px var(--green);
     border-left-style:groove;
 }
 
 .alert:-webkit-any(.green) {
-    border-left: 10px green;
+    border-left: 10px var(--green);
     border-left-style:groove;
 }
 
 
 .alert:-moz-any(.orange)  {
-    border-left: 10px rgb(255, 136, 0);
+    border-left: 10px var(--orange);
     border-left-style:groove;
 }
 
 .alert:-webkit-any(.orange) {
-    border-left: 10px rgb(255, 136, 0);
+    border-left: 10px var(--orange);
     border-left-style:groove;
 }
 
 
 .alert:-moz-any(.yellow)  {
-    border-left: 10px yellow;
+    border-left: 10px var(--yellow);
     border-left-style:groove;
 }
 
 .alert:-webkit-any(.yellow) {
-    border-left: 10px yellow;
+    border-left: 10px var(--yellow);
     border-left-style:groove;
 }
 
 .alert:-moz-any(.gray)  {
-    border-left: 10px lightgray;
+    border-left: 10px var(--lightgray);
     border-left-style:groove;
 }
 
 .alert:-webkit-any(.gray) {
-    border-left: 10px lightgray;
+    border-left: 10px var(--lightgray);
     border-left-style:groove;
 }
 
@@ -1119,3 +1140,48 @@ td {
 .alert .btn {
     text-align: center;
 }
+
+
+/* modals */
+.modal {
+
+    display: block;
+    background-color:  var(--white);
+    border: thin solid var(--gray);
+    border-radius: 5px;
+    margin-inline: 80px;
+    width: auto;
+    z-index: 999;
+    position: fixed;
+    top: 70px;
+    box-shadow: 5px 10px 50px 0px solid var(--gray);
+    box-sizing:content-box;
+    float:none !important;
+
+}
+
+.modal-content {
+    padding-inline:20px;
+    padding-block: 20px;
+}
+
+.modal-title{
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    border-bottom: thin solid var(--lightgray);
+    padding-bottom: 5px;
+}
+
+.modal-body {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    border-top: thin solid var(--lightgray);
+    padding-top: 15px;
+    text-align:right;
+}
+
