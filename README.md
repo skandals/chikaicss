@@ -40,7 +40,7 @@
 #31 Aug 2022 
 
 - Fixed navbar form alignment
-- Fixed color opcaity
+- Fixed color opacity
 
 #1 Sept 2022
 
@@ -51,3 +51,4 @@
 #2 Sept 2022 
  
  - Added modal
+ - Added device media queries for grid system
