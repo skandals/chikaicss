@@ -17,7 +17,7 @@
 - Added buttons
 - Added margins and paddings
 - Added text alignments
-- Added borders
+- Added borders (radius, border colors width thickness)
 - Added cards
 
 #29 Aug 2022
@@ -51,4 +51,11 @@
 #2 Sept 2022 
  
  - Added modal
- - Added device media queries for grid system
+ - Added device media queries (grid)
+
+ #3 Sept 2022
+ 
+ - Added image responsiveness
+ - Fixed device media queries (grid)
+ - Fixed cards by adding a shadow and border width
+ - Fixed alert design layout
