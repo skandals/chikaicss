@@ -1,6 +1,6 @@
 
 /* bg color variables */
-:root{
+:root {
  
     --dark: rgb(46, 46, 46);
     --blue: rgb(49, 100, 252);
@@ -28,8 +28,8 @@ body {
 ul, li, a {
     list-style: none;
     text-decoration: none;
+    outline:none;
 }
-
 
 /* background colors */
 .dark {
@@ -450,55 +450,54 @@ textarea {
 }
 
 
-
 /* text colors */
-.text-primary {
-    color:var(--blue);
+.text-blue {
+    color:var(--blue) !important;
 }
 
 .text-red {
-    color: var(--red);
+    color: var(--red) !important;
 }
 
 .text-green {
-    color: var(--green); 
+    color: var(--green) !important; 
 }
 
 .text-orange {
-    color: var(--orange);
+    color: var(--orange) !important;
 }
 
 .text-dark {
-    color: var(--dark);
+    color: var(--dark) !important;
 }
 
 .text-white {
-    color:var(--white);
+    color:var(--white) !important;
 }
 
 .text-yellow {
-    color: var(--yellow);
+    color: var(--yellow) !important;
 }
 
 .text-gray {
-    color: var(--gray);
+    color: var(--gray) !important;
 }
 
 /* width */
 .w-25 {
-    width: 25%; 
+    width: 25% !important; 
 }
 
 .w-50 {
-    width: 50%;
+    width: 50% !important;
 }
 
 .w-75 {
-    width: 75%;
+    width: 75% !important;
 }
 
 .w-100 {
-    width: 100%;
+    width: 100% !important;
 }
 
 /* vertical height */
@@ -527,7 +526,6 @@ textarea {
 /* buttons */
 .btn {
 
-    width: auto;
     height:40px;
     cursor: pointer;
     text-decoration: none;
@@ -536,19 +534,22 @@ textarea {
     text-transform:uppercase;
     border: none;
     padding: 0.5em;
+    width: 100%;
 
 }
 
 .nav-item a[class="btn"] {
+
     background-color: var(--green);
     height:40px;
     text-decoration: none;
     border-radius: 3px;
-    color: rgba(255, 255, 255, 0.739);
+    color: rgba(255, 255, 255, 0.7);
+
 }
 
 .nav-item a[class="btn"]:hover {
-    color: rgba(255, 255, 255, 0.952);
+    color: rgba(255, 255, 255, 1);
 }
 
  /* a:-moz-any(.btn) {
@@ -1125,6 +1126,17 @@ td {
 
 /* modals */
 .modal {
+ 
+    background: rgb(46, 46, 46, 0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+
+}
+
+.modal-box {
 
     display: block;
     background-color:  var(--white);
@@ -1134,8 +1146,8 @@ td {
     width: auto;
     z-index: 999;
     position: fixed;
-    top: 100px;
-    box-shadow: 0px 10px 20px solid var(--gray);
+    top: 30px;
+    /* box-shadow: 0px 0px 3px 0px var(--gray); */
     box-sizing:content-box;
     float:none !important;
 
@@ -1245,6 +1257,8 @@ td {
 /* tablet screen */
 @media screen and (min-device-width: 768px) and (max-device-width: 1200px)
 and (max-device-width: 1024px) {
+
+    /* columns */
     .col-md-1 {
         grid-column: span 1;
      }
@@ -1316,6 +1330,8 @@ and (max-device-width: 1024px) {
 
 /* laptop or desktop screen*/
 @media screen and (min-device-width: 1024px) {
+
+    /* columns */
     .col-lg-1 {
         grid-column: span 1;
      }
@@ -1386,6 +1402,7 @@ and (max-device-width: 1024px) {
 
 /* images */
 img {
+
     image-rendering: optimizeSpeed;
     width: 100%;
     padding: 0;
@@ -1401,7 +1418,6 @@ img {
 
 
 /* shadows */
-
 .shadow-sm {
     box-shadow: 0px 0px 3px var(--dark);
 }
