@@ -65,3 +65,10 @@
  - Added new colors (lightgreen, lightblue, darkgray, purple, pink)
  - Added modal overlay
  - Fixed border colors and styles
+
+ #5 Aug 2022 
+
+ - Fixed media query for Google Chrome
+ - Fixed href width and height
+ - Added sidenav
+ - Added avatar
