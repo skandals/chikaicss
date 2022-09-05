@@ -1,10 +1,9 @@
 # chikaicss
 
-
 #25 Aug 2022
 
 - Added spinner
-- Added colors
+- Added colors (red, blue, dark, green, gray, yellow, orange, lightgray)
 - Added containers
 
 #27 Aug 2022
@@ -59,3 +58,10 @@
  - Fixed device media queries (grid)
  - Fixed cards by adding a shadow and border width
  - Fixed alert design layout
+
+ #4 Sept 2022
+
+ - Added loading bar
+ - Added new colors (lightgreen, lightblue, darkgray, purple, pink)
+ - Added modal overlay
+ - Fixed border colors and styles

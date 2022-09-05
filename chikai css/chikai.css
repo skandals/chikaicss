@@ -8,9 +8,14 @@
     --orange:rgb(255, 114, 20);
     --green: rgb(23, 160, 23);
     --white: white;
-    --yellow: rgb(221, 221, 0);
+    --yellow: rgb(248, 248, 0);
     --gray: gray;
+    --darkgray: rgb(90, 90, 90);
     --lightgray: lightgray;
+    --purple: rgb(168, 0, 168);
+    --pink: rgb(255, 60, 151);
+    --lightblue: rgb(0, 191, 255);
+    --lightgreen: rgb(1, 226, 1);
 
 }
 
@@ -25,10 +30,28 @@ body {
 }
 
 /* remove default href, ul, li */
-ul, li, a {
+ul, li {
     list-style: none;
     text-decoration: none;
     outline:none;
+}
+
+p {
+    margin: 0;
+    padding:0;
+}
+
+a {
+    display:block;
+    font-size: 16px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+button {
+    font-size: 16px;
 }
 
 /* background colors */
@@ -40,12 +63,20 @@ ul, li, a {
     background: var(--blue);
 }
 
+.lightblue {
+    background: var(--lightblue);
+}
+
 .red {
     background: var(--red);
 }
 
 .green {
     background: var(--green);
+}
+
+.lightgreen {
+    background: var(--lightgreen);
 }
 
 .orange {
@@ -60,16 +91,28 @@ ul, li, a {
     background: var(--gray);
 }
 
+.darkgray {
+    background: var(--darkgray);
+}
+
 .lightgray {
     background: var(--lightgray);
+}
+
+.purple {
+    background: var(--purple);
+}
+
+.pink {
+    background: var(--pink);
 }
 
 /* navbar (incomplete) */
 /* should be fixed with nav-menu alignment */
 .navbar {
     background: var(--dark);
-    height:60px;
-    line-height: 60px;
+    height:70px;
+    line-height: 70px;
     width: 100%;
     position: relative;
 }
@@ -105,12 +148,12 @@ ul, li, a {
 .nav-item a {
     text-decoration: none;
     color: var(--lightgray);
-    margin-inline: 5px;
+    margin-inline: 10px;
 }
 
 .nav-item a:hover {
-    color: var(--lightgray);
-    transition: 0.5s;
+    color: var(--white);
+    transition: 0.7s;
 }
 
 .navbar .right {
@@ -204,7 +247,7 @@ textarea {
 
 .navbar form .form-control {
 
-    height:35px;
+    height:40px;
     padding: 5px;
     border-radius: 5px;
     border: none;
@@ -213,7 +256,7 @@ textarea {
 
 .navbar form button, .navbar form input[type="submit"] {
     
-    height:35px;
+    height:40px;
     padding: 5px;
     border:none;
     
@@ -483,6 +526,23 @@ textarea {
     color: var(--gray) !important;
 }
 
+.text-purple {
+    color: var(--purple) !important;
+}
+
+.text-pink {
+    color: var(--pink) !important;
+}
+
+.text-lightblue {
+    color: var(--lightblue) !important;
+}
+
+.text-lightgreen {
+    color: var(--lightgreen) !important;
+}
+
+
 /* width */
 .w-25 {
     width: 25% !important; 
@@ -533,49 +593,33 @@ textarea {
     color: var(--white);
     text-transform:uppercase;
     border: none;
-    padding: 0.5em;
-    width: 100%;
+    width: auto;
 
 }
 
-.nav-item a[class="btn"] {
+.nav-item a:is(.btn) {
 
-    background-color: var(--green);
-    height:40px;
+    background-color: var(--gray);
     text-decoration: none;
     border-radius: 3px;
     color: rgba(255, 255, 255, 0.7);
+    height: 35px;
+    display: inline;
+    text-align: center;
+    padding:10px;
 
 }
 
-.nav-item a[class="btn"]:hover {
-    color: rgba(255, 255, 255, 1);
-}
-
- /* a:-moz-any(.btn) {
-    height:40px;
-    width: auto;
-    text-decoration: none;
-    border-radius: 3px;
+.nav-item a:is(.btn):hover {
     color: var(--white);
-    padding: 0.5em;
 }
-
- a:-webkit-any(.btn) {
-    height:40px;
-    width: auto;
-    text-decoration: none;
-    border-radius: 3px;
-    color: var(--white);
-    padding: 5px;
-} */
 
 /* cards (incomplete)*/
 /* should be fixed */
 .card {
     
     border: thin solid var(--lightgray);
-    box-shadow: 0px 0px 30px var(--lightgray);
+    box-shadow: 0px 0px 10px var(--lightgray);
     background-color: var(--white);
     width: 100%;
     border-radius: 20px;
@@ -746,11 +790,11 @@ textarea {
 
 .spinner-container::after{
     content: "";
-    height:auto;
-    width: auto;
+    height: 50px;
+    width: 50px;
     border: 10px solid transparent;    
-    border-bottom-color: var(--green);
-    border-top-color: var(--green);
+    border-bottom-color: var(--blue);
+    border-top-color: var(--blue);
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -766,72 +810,122 @@ textarea {
     border: none;
 }
 
-.border-sm-dark {
-    border: thin solid var(--dark);
+.border-dark {
+    border-color: var(--dark);
+    border-style: solid;
 }
 
-.border-lg-dark {
-    border: thick solid var(--dark);
+.border-red {
+    border-color:var(--red);
+    border-style: solid;
 }
 
-.border-sm-red {
-    border: thin solid var(--red);
+.border-blue {
+    border-color:var(--blue);
+    border-style: solid;
 }
 
-.border-lg-red {
-    border: thick solid var(--red);
+.border-lightblue {
+    border-color:var(--lightblue);
+    border-style: solid;
 }
 
-.border-sm-blue {
-    border: thin solid var(--blue);
+.border-green {
+    border-color: var(--green);
+    border-style: solid;
 }
 
-.border-lg-blue {
-    border: thick solid var(--blue);
+.border-lightgreen {
+    border-color: var(--lightgreen);
+    border-style: solid;
 }
 
-.border-sm-green {
-    border: thin solid var(--green);
+.border-orange {
+    border-color: var(--orange);
+    border-style: solid;
 }
 
-.border-lg-green {
-    border: thick solid var(--green);
+.border-yellow {
+    border-color: var(--yellow);
+    border-style: solid;
 }
 
-.border-sm-orange {
-    border: thin solid var(--orange);
+.border-gray {
+    border-color: var(--gray);
+    border-style: solid;
 }
 
-.border-lg-orange {
-    border: thick solid var(--orange);
+.border-darkgray {
+    border-color: var(--darkgray);
+    border-style: solid;
+}
+
+.border-lightgray {
+    border-color: var(--lightgray);
+    border-style: solid;
+}
+
+.border-purple {
+    border-color: var(--purple);
+    border-style: solid;
+}
+
+.border-pink {
+    border-color: var(--pink);
+    border-style: solid;
+}
+
+/* border width */
+.border-0 {
+    border-width: 0em;
+}
+
+.border-1 {
+    border-width: 0.1em;
+}
+
+.border-2 {
+    border-width: 0.2em;
+}
+
+.border-3 {
+    border-width: 0.3em;
+}
+
+.border-4 {
+    border-width: 0.4em;
+}
+
+.border-5 {
+    border-width: 0.5em;
 }
 
 /* border radius */
-.border-radius-25 {
+.round-25 {
     border-radius: 25%;
 }
 
-.border-radius-50 {
+.round-50 {
     border-radius: 50%;
 }
 
-.border-radius-75 {
+.round-75 {
     border-radius: 75%;
 }
 
-.border-radius-100 {
+.round-100 {
     border-radius: 100%;
 }
 
-.border-radius-sm {
+.round-sm {
     border-radius: 5px;
 }
 
-.border-radius-md {
+.round-md {
     border-radius: 10px;
 }
 
-.border-radius-lg {
+.round-lg {
     border-radius: 15px;
 }
 
@@ -1088,7 +1182,36 @@ td {
     border-left: 20px var(--lightgray);
     border-left-style:groove;
     background-color: var(--lightgray);
+}
 
+.alert-purple {
+    border-left: 20px var(--purple);
+    border-left-style:groove;
+    background-color: var(--purple);
+}
+
+.alert-darkgray {
+    border-left: 20px var(--darkgray);
+    border-left-style:groove;
+    background-color: var(--darkgray);
+}
+
+.alert-pink {
+    border-left: 20px var(--pink);
+    border-left-style:groove;
+    background-color: var(--pink);
+}
+
+.alert-lightblue {
+    border-left: 20px var(--lightblue);
+    border-left-style:groove;
+    background-color: var(--lightblue);
+}
+
+.alert-lightgreen {
+    border-left: 20px var(--lightgreen);
+    border-left-style:groove;
+    background-color: var(--lightgreen);
 }
 
 .alert-msg {
@@ -1112,7 +1235,6 @@ td {
     cursor: pointer;
 
 }
-
 
 .alert-close a, .alert-close span {
 
@@ -1255,8 +1377,7 @@ td {
 }
 
 /* tablet screen */
-@media screen and (min-device-width: 768px) and (max-device-width: 1200px)
-and (max-device-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1200px) {
 
     /* columns */
     .col-md-1 {
@@ -1419,13 +1540,140 @@ img {
 
 /* shadows */
 .shadow-sm {
-    box-shadow: 0px 0px 3px var(--dark);
+    box-shadow: 0px 0px 3px var(--gray);
 }
 
 .shadow-md {
-    box-shadow: 0px 0px 6px var(--dark);
+    box-shadow: 0px 0px 6px var(--gray);
 }
 
 .shadow-lg {
-    box-shadow: 0px 0px 12px var(--dark);
+    box-shadow: 0px 0px 12px var(--gray);
 }
+
+/* loding bar */
+.loading-bar {
+    
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--lightgray);
+    border-radius: 5px;
+    padding:0;
+    margin:0;
+    border-spacing: 0;
+    overflow: hidden;
+
+}
+
+.loading-progress {
+    
+    padding: 5px;
+    width: auto;
+    border-radius: 2.5px;
+    animation: load 5s linear infinite;
+    
+}
+
+/* @keyframes load {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 25%;
+    }
+    50% {
+        width: 50%;
+    }
+    75% {
+        width: 75%;
+    }
+    100% {
+        width:  100%;
+    }
+} */
+
+
+/* sidenav */
+
+.sidenav {
+
+  border-bottom: 2px solid var(--dark);
+  width: 300px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  color: var(--dark);  
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  background-color: var(--white);
+
+}
+
+.sidenav-section {
+    max-height: 200px;
+    line-height: 50px;
+    border-bottom: 2px solid var(--dark);
+
+}
+
+.sidenav-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--dark);
+    width:100%;
+    height: auto;
+}
+
+.sidenav-item {
+
+    text-align: center;
+    height:auto;
+    width: 100%;
+    
+}
+
+.sidenav-item:hover, .sidenav-link:hover {
+    background: var(--lightgray);
+    color: var(--dark);
+}
+
+.sidenav-link {
+    color:var(--dark);
+    display: block;
+    width:auto;
+    height: 100%;
+    padding: 10px;
+}
+
+/* if navbar is dark */
+
+.sidenav:is(.dark), .dark .sidenav-title  {
+    background: var(--dark) !important;
+    color: var(--white);
+}
+
+.dark .sidenav-section {
+    border-bottom: 2px solid var(--white);
+}
+
+.sidenav:is(.dark), .dark .sidenav-title {
+    background: var(--dark) !important;
+    color: var(--white);
+}
+
+.dark .sidenav-item:hover, .dark .sidenav-link:hover {
+    background: var(--white);
+    color: var(--dark);
+}
+
+.dark .sidenav-link {
+    color:white;
+    display: block;
+    width:auto;
+    height: 100%;
+    padding: 10px;
+
+}
+
