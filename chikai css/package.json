@@ -1,0 +1,19 @@
+{
+  "name": "chikai-css",
+  "version": "1.0.0",
+  "description": "a css framework",
+  "main": "script-1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skandals/chikaicss.git"
+  },
+  "author": "sfiso nxumalo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skandals/chikaicss/issues"
+  },
+  "homepage": "https://github.com/skandals/chikaicss#readme"
+}

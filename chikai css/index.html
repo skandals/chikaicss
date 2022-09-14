@@ -10,19 +10,23 @@
 </head>
 <body>
     
-    <div class="navbar dark nav-expand">
-        <div class="container-fluid">
+    <!-- navbar -->
+    <div class="navbar dark expand-lg">
+        <div class="container-fluid text-dark">
 
             <div class="logo">
-                <span class="text-xl">Chitai CSS</span>
+                <span class="bi bi-bootstrap text-purple"></span>
+                <span>Chikai CSS</span>
             </div>
 
                 <ul class="nav-menu d-sm-none">
                     
                     <li class="nav-item">
-                        <a href="#!">Home</a>
+                        <a href="#!" class="active">Home</a>
                     </li>
-                    <!-- <li class="nav-item"><a href="#!" class="btn">About</a></li> -->
+                    <li class="nav-item">
+                        <a href="#!" class="btn outline-3 outline-darkgray text-capitalize">About</a>
+                    </li>
 
                    <li class="nav-item right">
                        <form method="post">
@@ -32,8 +36,9 @@
                                </div>                            
                                
                                <div class="input-field">
-                                   <input type="submit" class="btn blue" value="search">
+                                   <input type="submit" class="btn green" value="search">
                                </div>
+
                        </form>
                     </li>
 
@@ -42,18 +47,20 @@
     </div>
 
     <!-- header -->
-<!-- <div class="container-fluid text-center red mb-3 p-3 shadow-sm">
+<div class="container-fluid text-center red mb-3 p-3 shadow-sm">
     <span class="text-white">Share your moments!</span>
-</div> -->
+</div>
+
 
 <!-- sidenav -->
-<ul class="sidenav blue">
+<!-- <ul class="sidenav">
+ <div class="sidenav-content">
 
     <div class="sidenav-section">
-        <div class="d-inline-flex mx-2 my-2">    
+        <div class="mx-2 my-2 text-center">    
 
             <div class="avatar">
-                <img src="images/morty.jpg" class="img-responsive" />
+                <img src="images/1.jpg" />
             </div>  
             <div class="mx-3 my-3">
                 <span class="sidenav-title">Sfiso Nxumalo</span>
@@ -68,12 +75,14 @@
             <span class="mx-1"> Home</span>
         </a>
     </li>
+
     <li class="sidenav-item">
         <a href="#!" class="sidenav-link">
             <i class="bi bi-info-circle-fill"></i>
             <span class="mx-1">About</span>
         </a>
     </li>
+
     <li class="sidenav-item">
         <a href="#!" class="sidenav-link link-active">
             <i class="bi bi-phone-fill"></i>
@@ -81,11 +90,19 @@
         </a>
     </li>
 
-</ul>
+    <li class="sidenav-item">
+        <a href="#!" class="sidenav-link link-active">
+            <i class="bi bi-wrench"></i>
+            <span class="mx-1">Settings</span>
+        </a>
+    </li>  
+
+  </div>
+</ul> -->
 
 
 <!-- forms -->
-<!-- <div class="container text-center mx-5">
+<div class="container text-center mx-5">
 
     <div class="my-2"><span class="text-xl">Sign up</span></div>
 
@@ -101,15 +118,17 @@
             <textarea class="textarea-control"></textarea>
         </div>
 
+        <div class="input-field"><input type="checkbox" name="" id=""></div>
+        <div class="input-field"><input type="radio" name="" id=""></div>
+        <div class="input-field"><input type="range" class="w-100" name="" id=""></div>
         <div class="mb-5 mt-2">
             <button class="btn blue w-100">Upload</button>
         </div>
 
     </form>
-</div> -->
+</div>
 
 <!-- color bars -->
-
 <!-- <div class="container my-5">
 <div class="p-3 container-fluid mb-1 orange"></div>
 <div class="p-3 container-fluid mb-1 green"></div>
@@ -127,8 +146,8 @@
 </div> -->
 
 <!-- cards -->
-<!-- <div class="container my-3">
-    <div class="row mx-2 gap-2">
+<div class="container my-3">
+    <div class="row gap-1">
 
         <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card">
@@ -142,8 +161,8 @@
                         consectetur adipisicing elit. Libero, qui.
                     </div>
                      <div class="card-footer">
-                        <a href="" class="btn blue col-sm-12">edit</a>
-                        <a href="" class="btn red">remove</a>
+                            <a href="#!" class="btn blue p-2">edit</a>
+                            <a href="#!" class="btn red p-2">remove</a>
                      </div>
                 </div>
             </div>
@@ -153,7 +172,7 @@
             <div class="card">
                 <div class="card-content">
                     <div class="card-img">
-                        <img src="images/morty.jpg" alt="" class="img-responsive">
+                        <img src="images/3.jpg" alt="">
                     </div>
                     <div class="card-title text-center">Hello</div>
                     <div class="card-body">
@@ -172,7 +191,7 @@
             <div class="card">
                 <div class="card-content">
                     <div class="card-img">
-                        <img src="images/morty.jpg" alt="" class="img-responsive">
+                        <img src="images/7.jpg" alt="" class="img-responsive">
                     </div>
                     <div class="card-title text-center">Hello</div>
                     <div class="card-body">
@@ -187,10 +206,30 @@
             </div>
         </div>
 
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="images/8.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="card-title text-center">Hello</div>
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Libero, qui.
+                    </div>
+                    <div class="card-footer">
+                    <a href="" class="btn blue">edit</a>
+                    <a href="" class="btn red">remove</a>
+
+                </div>
+                </div>
+            </div>
+        </div>
 
 </div>
-</div> -->
+</div>
 
+<!-- tables -->
 <!-- <div class="container">
 
     <table class="table">
@@ -225,7 +264,7 @@
 <!-- <div class="container-fluid text-center orange text-white p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, placeat!</div> -->
 
 <!-- alerts -->
-<!-- <div class="container">
+<div class="container">
     <div class="alert alert-red">    
      
     <div class="alert-msg">
@@ -233,13 +272,11 @@
     </div>
 
     <div class="alert-close">
-            <span class="text-white"> 
-                x
-            </span>
+            <span class="alert-close-btn"></span>
     </div> 
    
     </div>
-</div> -->
+</div>
 
 <!-- modals -->
 <!-- <div class="modal">
@@ -262,8 +299,6 @@
     </div>
 
 </div> -->
-
-<!-- <div class="container-fluid p-3 vh-100"></div> -->
 
 <div class="container">
     <div class="row gap-2">
@@ -289,7 +324,7 @@
                     <span class="">Lorem ipsum dolor sit amet.</span>  
                 </div>  
                 <section class="text-center my-2">
-                    <a href="#!" class="btn gray">
+                    <a href="#!" class="btn gray w-100">
                         <i class="bi bi-three-dots text-xl"></i>
                     </a>
                 </section>
@@ -307,20 +342,31 @@
     </div>
 </div>
 
+
+<!-- outline buttons -->
+<div class="container">
+
+    <a href="#!" class="btn btn-outline outline-1 text-blue p-2">Hello</a>
+    <a href="#!" class="btn btn-outline outline-1 text-red p-2">Hello</a>
+    <a href="#!" class="btn btn-outline outline-1 text-green p-2">Hello</a>
+    <a href="#!" class="btn btn-outline outline-1 text-orange p-2">Hello</a>           
+
+</div>
+
 <!-- footer -->
-<!-- <section class="container-fluid footer dark text-white p-2">
+<section class="container-fluid footer dark text-white p-2">
 
     <div class="text-center mt-1">
-        <a href="#!" class="text-white btn blue">Facebook</a>
-        <a href="#!" class="text-white btn blue">Twitter</a>
-        <a href="#!" class="text-white btn red">Youtube</a>
+        <a href="#!" class="text-white btn blue p-2"><i class="bi bi-facebook text-xl"></i> Facebook</a>
+        <a href="#!" class="text-white btn lightblue p-2"><i class="bi bi-twitter text-xl"></i> Twitter</a>
+        <a href="#!" class="text-white btn red p-2"><i class="bi bi-youtube text-xl"></i> Youtube</a>
     </div>
 
     <div class="center mt-3">
         <span class="text-upper">esk studio &copy; 2022</span>
-    /div>
+    </div>
 
-</section> -->
+</section>
 
 <!-- loading bar -->
 <!-- <div class="container">
@@ -334,9 +380,6 @@
         <div class="spinner"></div>
     </div>
 </div> -->
-
-.
-
 
 
 
