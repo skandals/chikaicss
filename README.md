@@ -66,9 +66,15 @@
  - Added modal overlay
  - Fixed border colors and styles
 
- #5 Aug 2022 
+ #5 Sept 2022 
 
  - Fixed media query for Google Chrome
  - Fixed href width and height
  - Added sidenav
  - Added avatar
+
+ #13 Sept 2022 
+
+ - Added outlines
+ - Fixed border width
+ - Fixed padding and margin measurements(pixels)
