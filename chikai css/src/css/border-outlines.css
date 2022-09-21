@@ -1,0 +1,82 @@
+/*border outlines */
+.outline-0 {
+    outline: none;
+}
+
+.outline-1 {
+    outline-width: 0.1px;
+    outline-style: solid;
+}
+
+.outline-2 {
+    outline: 0.2px;
+    outline-style: solid;
+}
+
+.outline-3 {
+    outline-width: 0.3;
+    outline-style: solid;
+}
+
+.outline-4 {
+    outline: 0.4px;
+    outline-style: solid;
+}
+
+.outline-5 {
+    outline-width: 0.5px;
+    outline-style: solid;
+}
+
+/* outline colors */
+.outline-dark {
+    outline-color: var(--dark);
+}
+
+.outline-red {
+    outline-color: var(--red);
+}
+
+.outline-blue {
+    outline-color: var(--blue);
+}
+
+.outline-lightblue {
+    outline-color: var(--lightblue);
+}
+
+.outline-orange {
+    outline-color: var(--orange);
+}
+
+.outline-yellow {
+    outline-color: var(--yellow);
+}
+
+.outline-white {
+    outline-color: var(--white);
+}
+
+.outline-green {
+    outline-color: var(--green);
+}
+
+.outline-gray {
+    outline-color: var(--gray);
+}
+
+.outline-darkgray {
+    outline-color: var(--darkgray);
+}
+
+.outline-pink {
+    outline-color: var(--pink);
+}
+
+.outline-purple {
+    outline-color: var(--purple);
+}
+
+.outline-lightgreen {
+    outline-color: var(--lightgreen);
+}

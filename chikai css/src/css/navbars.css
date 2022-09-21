@@ -1,0 +1,111 @@
+/* navbar (incomplete) */
+/* should be fixed with nav-menu alignment */
+.navbar {
+
+    height:auto;
+    width: 100%;
+    line-height: 70px;
+    position: relative;
+    box-shadow: 0px 10px 20px solid var(--gray);
+    box-sizing: border-box;
+
+}
+
+/* align navbar items inline */
+.navbar .container-fluid, 
+.navbar .container {
+    display: inline;
+}
+
+/* if navbar is white */
+.navbar:is(.white) span,
+.navbar:is(.white) a,
+.logo *
+ {
+    color: var(--dark);
+}
+
+.logo, 
+.logo span,
+.logo p,
+.logo i {
+    font-size: x-large;
+    color: var(--white);
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.logo p {
+    margin-block:0;
+}
+
+.nav-menu {
+    margin-block: 0;
+    position: relative;
+}
+
+.nav-menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-item {
+
+ margin-inline: 5px;
+
+}
+
+.nav-item a {
+
+    text-decoration: none;
+    color: var(--lightgray);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.nav-item a:hover {
+    background: rgba(165, 165, 165, 0.5);
+    transition: 0.7s;
+}
+
+.navbar .right {
+    margin-right: 10px;
+}
+
+
+/* navbar buttons */
+.nav-item a:is(.btn) {
+
+    text-decoration: none;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding:7px;
+    display: inline;
+    margin:0;
+
+}
+
+.nav-item a:is(.btn):hover, 
+.nav-item button:is(.btn):hover {
+    color: var(--white);
+}
+
+
+/* if nav is white reset links to default */
+.navbar:is(.white) a:hover {
+    color: var(--dark);
+}
+
+.navbar:is(.white) a:is(.btn) {
+    color: var(--white);
+}
+
+.active {
+    font-weight: 600;
+}

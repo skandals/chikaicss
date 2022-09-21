@@ -1,0 +1,15 @@
+
+/* table */
+/* (should be fixed) */
+
+.table tbody tr {
+    background-color: none;
+    border-bottom: thin solid var(--lightgray);
+    padding:5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background: var(--lightgray); 
+}

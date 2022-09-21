@@ -1,0 +1,61 @@
+/* background colors */
+
+.transparent {
+    background: transparent !important;
+}
+
+.dark {
+    background: var(--dark) !important;
+}
+
+.blue {
+    background: var(--blue) !important;
+}
+
+.lightblue {
+    background: var(--lightblue) !important;
+}
+
+.red {
+    background: var(--red) !important;
+}
+
+.green {
+    background: var(--green) !important;
+}
+
+.lightgreen {
+    background: var(--lightgreen) !important;
+}
+
+.orange {
+    background: var(--orange) !important;
+}
+
+.yellow {
+    background: var(--yellow) !important;
+}
+
+.gray {
+    background: var(--gray) !important;
+}
+
+.darkgray {
+    background: var(--darkgray) !important;
+}
+
+.lightgray {
+    background: var(--lightgray) !important;
+}
+
+.purple {
+    background: var(--purple) !important;
+}
+
+.pink {
+    background: var(--pink) !important;
+}
+
+.white {
+    background: var(--white) !important;
+}

@@ -1,0 +1,16 @@
+/* font size */
+.text-sm {
+    font-size: small;
+}
+
+.text-md {
+    font-size: medium;
+}
+
+.text-lg {
+    font-size: large;
+}
+
+.text-xl {
+    font-size: x-large;
+}

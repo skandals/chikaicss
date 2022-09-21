@@ -1,0 +1,23 @@
+/* buttons */
+.btn {
+
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 3px;
+    color: var(--white);
+    text-transform:uppercase;
+    border: none;
+    place-content: center center;
+    outline: none;
+    background: var(--blue);
+    width: auto;
+    height: 35px;
+    text-align: center;
+
+}
+
+
+.btn-outline {
+    background-color: transparent !important; 
+    outline:auto;
+}

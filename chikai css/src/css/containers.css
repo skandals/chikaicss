@@ -1,0 +1,10 @@
+
+/* containers */
+.container-fluid {
+    width: auto !important;
+}
+
+.container {
+  margin-inline: 1em;
+  margin-block: 1em;
+}

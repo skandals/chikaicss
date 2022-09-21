@@ -1,0 +1,79 @@
+/* forms (incomplete)  */
+/* input decoration (borders, width and height) should be fixed */
+
+.form-control {
+
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border:thin solid var(--lightgray);
+    border-radius: 5px;
+
+}
+
+.input-field input[type="file"] {
+
+    width: 100%;
+    padding-top: 15px;
+    margin-left: 0;
+    padding-left: 10px;
+
+}
+
+.textarea-control {
+
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    border:thin solid var(--lightgray);
+    border-radius: 5px;
+
+}
+
+.form-control::placeholder, 
+.textarea-control::placeholder
+ {
+    font-size:medium;
+}
+
+/* .form-control:focus-within,
+ textarea
+{
+    outline: none;
+} */
+
+/* navbar form */
+.navbar form {
+
+    display: inline-flex;
+    height:auto;
+    margin-inline: 10px;
+
+}
+
+.navbar form .input-field {
+    box-sizing: border-box;
+    border: none;
+    margin-left: 5px;
+}
+
+.navbar form .form-control {
+
+    height:35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: thin solid var(--gray);
+
+}
+
+.navbar form button, 
+.navbar form input[type="submit"], 
+.navbar form a {
+    
+    height:35px;
+    border:none;
+    
+}
+

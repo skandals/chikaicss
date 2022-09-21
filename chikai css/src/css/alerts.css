@@ -1,0 +1,187 @@
+/* alerts */
+.alert {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-radius: 3px;
+    color: var(--white);
+    width: auto;
+    position: relative;
+    margin: 0;
+}
+
+.alert-dark  {
+    border-left: 20px var(--dark);
+    border-left-style:groove;
+    background: var(--dark);
+}
+
+.alert-red  {
+    border-left: 20px var(--red);
+    border-left-style:groove;
+    background: var(--red);
+}
+
+.alert-blue {
+    border-left: 20px var(--blue);
+    border-left-style:groove;
+    background-color: var(--blue);
+}
+
+.alert-green {
+    border-left: 20px var(--green);
+    border-left-style:groove;
+    background: var(--green);
+}
+
+.alert-orange {
+    border-left: 20px var(--orange);
+    border-left-style:groove;
+    background: var(--orange);
+}
+
+.alert-yellow {
+    border-left: 20px var(--yellow);
+    border-left-style:groove;
+    background: var(--yellow);
+
+}
+
+.alert-gray {
+    border-left: 20px var(--lightgray);
+    border-left-style:groove;
+    background: var(--lightgray);
+}
+
+.alert-purple {
+    border-left: 20px var(--purple);
+    border-left-style:groove;
+    background: var(--purple);
+}
+
+.alert-darkgray {
+    border-left: 20px var(--darkgray);
+    border-left-style:groove;
+    background: var(--darkgray);
+}
+
+.alert-pink {
+    border-left: 20px var(--pink);
+    border-left-style:groove;
+    background: var(--pink);
+}
+
+.alert-lightblue {
+    border-left: 20px var(--lightblue);
+    border-left-style:groove;
+    background: var(--lightblue);
+}
+
+.alert-lightgreen {
+    border-left: 20px var(--lightgreen);
+    border-left-style:groove;
+    background: var(--lightgreen);
+}
+
+
+/* alert close accent color (should be fixed) */
+.alert-dark .alert-close {
+    background: var(--dark);
+    color: var(--white);
+}
+
+.alert-red  .alert-close {
+    background: var(--red);
+    color: var(--white);
+}
+
+.alert-blue .alert-close {
+    background-color: var(--blue);  
+      color: var(--white);
+}
+
+.alert-green .alert-close {
+    background: var(--green);
+    color: var(--white);
+}
+
+.alert-orange  .alert-close{
+    background: var(--orange);
+    color: var(--white);
+}
+
+.alert-yellow .alert-close {
+    background: var(--yellow);
+    color: var(--white);
+}
+
+.alert-gray .alert-close {
+    color: var(--white);
+    background: var(--lightgray);
+}
+
+.alert-purple .alert-close {
+    background: var(--purple);
+    color: var(--white);
+}
+
+.alert-darkgray .alert-close {
+    background: var(--darkgray);
+    color: var(--white);
+}
+
+.alert-pink .alert-close {
+    background: var(--pink);
+    color: var(--white);
+}
+
+.alert-lightblue .alert-close {
+    background: var(--lightblue);
+    color: var(--white);
+}
+
+.alert-lightgreen .alert-close {
+    background: var(--lightgreen);
+    color: var(--white);
+}
+
+.alert-msg {
+    
+    grid-column: span 11;
+    text-overflow: clip;
+    overflow-wrap: break-word;
+    display: grid;
+    align-items: center;
+    
+}
+
+.alert-close {
+
+    grid-column: span 1;
+    font-family: 'Courier New';
+    /* background: var(--darkgray); */
+    min-height: 100%;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-left: thin solid var(--white)
+
+
+}
+
+.alert-close a,
+ .alert-close span {
+
+    font-size:x-large;
+    height: auto;
+    position: relative;
+    width: auto;
+    padding: .5em;
+    color: var(--white);
+
+}
+
+.alert-close-btn::after {
+       content: "\f622";
+       /* content: 'x'; */
+}

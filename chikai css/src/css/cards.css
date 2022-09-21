@@ -1,0 +1,62 @@
+/* cards (incomplete)*/
+/* should be fixed */
+.card {
+    
+    border: thin solid var(--lightgray);
+    box-shadow: 0px 0px 10px var(--lightgray);
+    background: var(--white);
+    width: auto;
+    border-radius: 20px;
+
+}
+
+.card-content {
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    overflow: clip;
+}
+
+.card-img img {
+
+    object-position: center;
+    object-fit: cover;
+    top:0px;
+    position: relative;
+    min-height: 250px;
+    max-height: 250px; 
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.card-title {
+
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--lightgray); 
+
+}
+
+.card-body {
+    margin: 10px;
+}
+
+.card-footer {
+
+    border-top:  1px solid var(--lightgray);
+    padding-top: 15px;
+    margin:10px;
+
+}
+
+/* card buttons */
+
+.card a, 
+.card button {
+    padding: .5em;
+    word-wrap: break-word;
+    display: inline-grid;
+    align-content: center;
+}

@@ -1,0 +1,23 @@
+/* spinners */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+}
+
+.spinner-container::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    border: 10px solid transparent;    
+    border-bottom-color: var(--blue);
+    border-top-color: var(--blue);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+

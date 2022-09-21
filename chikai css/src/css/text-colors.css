@@ -1,0 +1,49 @@
+/* text colors */
+.text-blue {
+    color:var(--blue) !important;
+}
+
+.text-red {
+    color: var(--red) !important;
+}
+
+.text-green {
+    color: var(--green) !important; 
+}
+
+.text-orange {
+    color: var(--orange) !important;
+}
+
+.text-dark {
+    color: var(--dark) !important;
+}
+
+.text-white {
+    color:var(--white) !important;
+}
+
+.text-yellow {
+    color: var(--yellow) !important;
+}
+
+.text-gray {
+    color: var(--gray) !important;
+}
+
+.text-purple {
+    color: var(--purple) !important;
+}
+
+.text-pink {
+    color: var(--pink) !important;
+}
+
+.text-lightblue {
+    color: var(--lightblue) !important;
+}
+
+.text-lightgreen {
+    color: var(--lightgreen) !important;
+}
+
