@@ -1,12 +1,15 @@
 /* alerts */
 .alert {
-    display:grid;
+
+    display:inline-grid;
     grid-template-columns: repeat(12, 1fr);
     border-radius: 3px;
     color: var(--white);
     width: auto;
     position: relative;
     margin: 0;
+    padding: .5em;
+
 }
 
 .alert-dark  {
@@ -151,6 +154,7 @@
     overflow-wrap: break-word;
     display: grid;
     align-items: center;
+    justify-content: center;
     
 }
 
@@ -158,26 +162,24 @@
 
     grid-column: span 1;
     font-family: 'Courier New';
-    /* background: var(--darkgray); */
     min-height: 100%;
     cursor: pointer;
     display: grid;
     align-items: center;
     justify-content: center;
-    border-left: thin solid var(--white)
-
+    border-left: thin solid var(--white);
 
 }
 
-.alert-close a,
- .alert-close span {
+.alert-close * {
 
     font-size:x-large;
     height: auto;
     position: relative;
     width: auto;
-    padding: .5em;
     color: var(--white);
+    margin-left: 5px;
+    margin-top: 5px;
 
 }
 

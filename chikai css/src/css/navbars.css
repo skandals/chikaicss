@@ -8,14 +8,11 @@
     position: relative;
     box-shadow: 0px 10px 20px solid var(--gray);
     box-sizing: border-box;
+    display: inline-grid;
 
 }
 
 /* align navbar items inline */
-.navbar .container-fluid, 
-.navbar .container {
-    display: inline;
-}
 
 /* if navbar is white */
 .navbar:is(.white) span,

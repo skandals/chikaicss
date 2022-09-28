@@ -1,25 +1,48 @@
-const sidenavElem = document.querySelector('.sidenav');
+const sidenavs = document.querySelectorAll('.sidenav');
 const sidenavBtns = document.querySelectorAll('.sidenav-btn');
 
 //create the sidenav overlay
 const sidenavOverlay = document.createElement('div')
 sidenavOverlay.classList.add('sidenav-overlay');
-sidenavElem.insertAdjacentElement('beforebegin', sidenavOverlay);
 
-// click the sidenav overlay to hide the sidenav
-sidenavOverlay.addEventListener('click', e => {
-    sidenavElem.style.trasition = 'ease-in 5s';
-    e.target.style.display = 'none';
-    sidenavElem.style.translate = '-300px 0px';
-});
+sidenavs.forEach(sidenav => {
 
-// click a btn to show the sidenav
-sidenavBtns.forEach(sidenavBtn => {
-    sidenavBtn.addEventListener('click', e => {
-        sidenavOverlay.style.display = 'block';
-        sidenavElem.style.trasition = 'ease-in-out 5s';
-        sidenavElem.style.translate = '0px 0px';
+    // click a btn to show the sidenav
+    sidenavBtns.forEach(sidenavBtn => {
+        sidenavBtn.addEventListener('click', e => {
+
+            e.preventDefault(); 
+
+            // get the current sidenav id
+            if(sidenavBtn.getAttribute('cc-target') == sidenav.getAttribute('id')) {
+
+                // get sidenav id
+                let sideNavId = sidenavBtn.getAttribute('cc-target');
+                let sideNavElem = document.getElementById(sideNavId);
+                
+                // append the overlay to the sidenav
+                sideNavElem.insertAdjacentElement('beforebegin', sidenavOverlay);
+                
+                // show sidenav
+                sidenavOverlay.style.display = 'block';
+                sideNavElem.style.trasition = 'ease-in-out 5s';
+                sideNavElem.style.translate = '0px 0px';
+                
+                // click the sidenav overlay to hide the sidenav
+                sidenavOverlay.addEventListener('click', e => {
+                    
+                    sidenav.style.trasition = 'ease-in 5s';
+                    e.target.style.display = 'none';
+                    sidenav.style.translate = '-300px 0px';
+                    
+                });
+
+            }
+
+        });
     });
-});
+
+
+})
 
 

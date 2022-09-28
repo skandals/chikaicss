@@ -7,13 +7,14 @@
     background: var(--white);
     width: auto;
     border-radius: 20px;
+    font-family: sans-serif;
 
 }
 
 .card-content {
     text-overflow: ellipsis;
     overflow-wrap: break-word;
-    overflow: clip;
+    overflow:clip;
 }
 
 .card-img img {
@@ -32,7 +33,7 @@
 
 .card-title {
 
-    padding-bottom: 5px;
+    padding-bottom: 7px;
     font-size: 20px;
     font-weight: 500;
     border-bottom: 1px solid var(--lightgray); 
@@ -46,7 +47,8 @@
 .card-footer {
 
     border-top:  1px solid var(--lightgray);
-    padding-top: 15px;
+    padding-block: 10px;
     margin:10px;
+    vertical-align: middle;
 
 }

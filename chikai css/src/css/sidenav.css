@@ -26,6 +26,7 @@
     translate: -300px 0px;
     z-index: 999;
     width:300px;
+    overflow: auto;
 
   }
 

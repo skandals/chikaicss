@@ -27,6 +27,7 @@ a, button  {
     padding: 0;
     margin:0;
     outline: none;
+    display: inline-block;
 
 }
 
@@ -68,7 +69,6 @@ th {
     padding-bottom: 10px;
     font-family: 'Open sans';
 }
-
 
 td {
     padding-block: 20px;

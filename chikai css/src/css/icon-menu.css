@@ -11,11 +11,12 @@
     top:0; 
     /* animation: toggleIconMenu 2s linear;
     animation-iteration-count: initial;
-    transform: translateX(-82px); */
+    translate: -82px 0px; */
     border: 1px solid var(--lightgray);
     border-left:none;
     border-block:none;
-
+    overflow: auto;
+    
 }
 
 .icon-nav-menu, 
@@ -61,15 +62,25 @@
 }
 
 .icon-link:hover {
-    background: var(--gray);
-    color: var(--white) !important;
+    background: var(--lightgray);
     transition: all .5s;
 }
+
+.icon-menu:is(.dark, .blue, .red, .green, .orange, .lightblue, .yellow, .gray, .darkgray, .purple, .pink) .icon-nav-menu
+.icon-link {
+    color:var(--white) !important;
+}
+
+.icon-menu:is(.dark, .blue, .red, .green, .orange, .lightblue, .yellow, .gray, .darkgray, .purple, .pink) .icon-nav-menu .icon-link:hover {
+    color: var(--dark) !important;
+    background-color: var(--white);
+    transition: all .5s;
+ }
 
 /* @keyframes toggleIconMenu {
 
     to {
-        transform: translateX(0px);
+        translate: 0 0;
         
     }
 

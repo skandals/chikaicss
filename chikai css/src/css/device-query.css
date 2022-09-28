@@ -1,7 +1,83 @@
 /* media device queries (should be fixed)*/
 
-/* mobile screens */
-@media screen and (width <= 576px) {
+/*extra small screens */
+@media screen and (width <= 480px) {
+    /* columns */
+    .col-xs-1 {
+        grid-column: span 1;
+    }
+    .col-xs-2 {
+        grid-column: span 2;
+    }
+    .col-xs-3 {
+        grid-column: span 3;
+    }
+    .col-xs-4 {
+        grid-column: span 4;
+    }
+    .col-xs-5 {
+        grid-column: span 5;
+    }
+    .col-xs-6 {
+        grid-column: span 6;
+    }
+    .col-xs-7 {
+        grid-column: span 7;
+    }
+    .col-xs-8 {
+        grid-column: span 8;
+    }
+    .col-xs-9 {
+        grid-column: span 9;
+    }
+    .col-xs-10 {
+        grid-column: span 10;
+    }
+    .col-xs-11 {
+        grid-column: span 11;
+    }
+    .col-xs-12 {
+        grid-column: span 12;
+    }
+
+    /* display */
+    .d-xs-none {
+        display: none;
+    }
+
+    .d-xs-block {
+        display: block;
+    }
+
+    .d-xs-inline {
+        display: inline;
+    }
+
+    .d-xs-inline-block {
+        display: inline-block;
+    }
+
+    .d-xs-inline-flex {
+        display: inline-flex;
+    }
+
+    .d-xs-flex {
+        display: flex;
+    }
+
+    .d-xs-grid {
+        display: grid;
+    }
+
+    /* sidenav adjust */
+    .sidenav-content {
+        width: 300px;
+    }
+
+}
+
+/* small screens */
+@media screen and (width < 576px) {
 
     /* columns */
     .col-sm-1 {
@@ -72,14 +148,14 @@
 
     /* sidenav adjust */
     .sidenav-content {
-        width: 300px;
+        width: 400px;
     }
 
 
 }
 
 /* tablet screen */
-@media screen and (width > 576px)  {
+@media screen and (width >= 576px)  {
 
     /* columns */
     .col-md-1 {
@@ -149,16 +225,21 @@
     }
 
     /* sidenav adjust */
-    .sidenav-content, .sidenav-link  {
-        width: 360px;
-        text-overflow: ellipsis;
+    .sidenav-content {
+        width: 480px;
+        
     }
 
+    .sidenav-link {
+        text-overflow: ellipsis;
+        overflow-wrap: break-word;
+        overflow: hidden;
+    }
 
 }
 
 /* laptop screen*/
-@media screen and (width > 992px) {
+@media screen and (width >= 992px) {
 
     /* columns */
     .col-lg-1 {
@@ -235,7 +316,7 @@
 }
 
 /* desktop screen*/
-@media screen and (width > 1200px) {
+@media screen and (width >= 1200px) {
 
     /* columns */
     .col-xl-1 {

@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="../bootstrap icons/bootstrap-icons.css">
     <!-- <script src="js/index.js" defer></script> -->
     <script src="js/carousel.js" defer></script>
+    <script src="js/alerts.js" defer></script>
     <script src="js/sidenav.js" defer></script>
+    <script src="js/modal.js" defer></script>
+
 </head>
 <body>
 
     <!-- icon menu -->
-<!-- <div class="icon-menu">
+<div class="icon-menu">
 
     <ul class="icon-nav-menu">
         <li class="icon-item">
@@ -27,13 +30,22 @@
             <span class="bi bi-info"></span>
             <span>Info</span>
         </a>
-    </li>
+        </li>
+
         <li class="icon-item">
             <a href="#!" class="icon-link">
                 <span class="bi bi-person"></span>
                 <span>Profile</span>
             </a>
         </li>
+
+        <li class="icon-item">
+            <a href="#!" class="icon-link">
+                <span class="bi bi-wrench"></span>
+                <span>Settings</span>
+            </a>
+        </li>  
+
         <li class="icon-item">
             <a href="#!" class="icon-link">
                 <i class="bi bi-door-open"></i>
@@ -43,7 +55,7 @@
 
     </ul>
 
-</div> -->
+</div>
     
 <!-- dropdown -->
 <!-- <ul class="dropdown" id="menuList">
@@ -61,21 +73,21 @@
                 <span class="">Chikai CSS</span>
             </div>
 
-                <ul class="nav-menu">
+                <ul class="nav-menu d-sm-none">
                     
                     <li class="nav-item">
-                        <a href="#!" class="active">Home</a>
+                        <a href="" cc-target="modal1" class="active modal-btn">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#!" class="btn red">About</a>
+                        <a href="#fullimg" class="btn red">About</a>
                     </li>
                     <!-- navbar-dropdown (to be fixed)-->
                     <li class="nav-item">
-                        <a href="#slidenav" class="sidenav-btn">Menu</a>
+                        <a href="" cc-target="sidenav1" class="sidenav-btn">Menu</a>
                     </li>
 
-                   <li class="nav-item d-md-none">
+                   <li class="nav-item">
                        <form method="post">
    
                                <div class="input-field">
@@ -98,9 +110,8 @@
     <span class="text-white">Share your moments!</span>
 </div>
 
-
 <!-- sidenav -->
-<ul class="sidenav" id="sidenav">
+<ul class="sidenav" id="sidenav1">
 
     <div class="sidenav-section">
         <div class="mx-2 my-2 text-center">    
@@ -116,7 +127,7 @@
     </div>
 
     <li class="sidenav-item">
-        <a href="#!" class="sidenav-link">
+        <a href="#fullimg" class="sidenav-link">
             <span class="bi bi-house-fill"></span>
             <span class="mx-1"> Home</span>
         </a>
@@ -148,6 +159,8 @@
 <!-- carousel -->
 <div class="container text-center">
 
+    <span class="text-xxl">Carousel</span>
+
     <ul class="carousel">
         
         <li class="carousel-item">
@@ -177,7 +190,7 @@
 <!-- forms -->
 <div class="container text-center">
 
-    <div class="my-2"><span class="text-xl">Sign up</span></div>
+    <div class="my-2"><span class="text-xxl">Forms</span></div>
 
     <form>
         <div class="input-field">
@@ -194,32 +207,114 @@
         <div class="input-field"><input type="checkbox" name="" id=""></div>
         <div class="input-field"><input type="radio" name="" id=""></div>
         <div class="input-field"><input type="range" class="w-100" name="" id=""></div>
-        <div class="mb-5 mt-2">
+        <div class="mb-3 mt-2">
             <button class="btn blue w-100">Upload</button>
         </div>
 
     </form>
 </div>
 
+<!-- alerts -->
+
+<div class="center mb-3">
+    <span class="text-xxl">Alerts</span>
+</div>
+    
+
+<div class="container center">
+    <div class="alert alert-green">    
+     
+    <div class="alert-msg">
+        <span>You have logged in successfully!</span>
+    </div>
+
+    <div class="alert-close">
+            <span class="bi bi-x-circle-fill"></span>
+    </div> 
+   
+    </div>
+</div>
+
+<div class="container center">
+    <div class="alert alert-red">    
+     
+    <div class="alert-msg">
+        <span>You have logged in successfully!</span>
+    </div>
+
+    <div class="alert-close">
+            <span class="bi bi-x-circle-fill"></span>
+    </div> 
+   
+    </div>
+</div>
+
+<div class="container center">
+    <div class="alert alert-orange">    
+     
+    <div class="alert-msg">
+        <span>You have logged in successfully!</span>
+    </div>
+
+    <div class="alert-close">
+            <span class="bi bi-x-circle-fill"></span>
+    </div> 
+   
+    </div>
+</div>
+
+<div class="container center">
+    <div class="alert alert-blue">    
+     
+    <div class="alert-msg">
+        <span>You have logged in successfully!</span>
+    </div>
+
+    <div class="alert-close">
+            <span class="bi bi-x-circle-fill"></span>
+    </div> 
+   
+    </div>
+</div>
+
+<div class="container center">
+    <div class="alert alert-lightblue">    
+     
+    <div class="alert-msg">
+        <span>You have logged in successfully!</span>
+    </div>
+
+    <div class="alert-close">
+            <span class="bi bi-x-circle-fill"></span>
+    </div> 
+   
+    </div>
+</div>
+
 <!-- color bars -->
-<!-- <div class="container my-5">
-<div class="p-3 container-fluid mb-1 orange"></div>
-<div class="p-3 container-fluid mb-1 green"></div>
-<div class="p-3 container-fluid mb-1 lightgreen"></div>
-<div class="p-3 container-fluid mb-1 yellow"></div>
-<div class="p-3 container-fluid mb-1 blue"></div>
-<div class="p-3 container-fluid mb-1 lightblue"></div>
-<div class="p-3 container-fluid mb-1 red"></div>
-<div class="pink p-3 container-fluid"></div>
-<div class="purple p-3 my-1 container-fluid"></div>
-<div class="dark p-3 container-fluid"></div>
-<div class="gray p-3 container-fluid my-1"></div>
-<div class="darkgray p-3 container-fluid mb-1"></div>
-<div class="lightgray p-3 container-fluid mb-1"></div>
-</div> -->
+<div class="container my-5 text-center">
+<div class="p-3 container-fluid mb-1 orange text-white">Orange</div>
+<div class="p-3 container-fluid mb-1 green text-white">Green</div>
+<div class="p-3 container-fluid mb-1 lightgreen text-white">Lightgreen</div>
+<div class="p-3 container-fluid mb-1 yellow text-white">Yellow</div>
+<div class="p-3 container-fluid mb-1 blue text-white">Blue</div>
+<div class="p-3 container-fluid mb-1 lightblue text-white">Lightblue</div>
+<div class="p-3 container-fluid mb-1 red text-white">Red</div>
+<div class="pink p-3 container-fluid text-white">Pink</div>
+<div class="purple p-3 my-1 container-fluid text-white">Purple</div>
+<div class="dark p-3 container-fluid text-white">Dark</div>
+<div class="gray p-3 container-fluid my-1 text-white">Gray</div>
+<div class="darkgray p-3 container-fluid mb-1 text-white">Darkgray</div>
+<div class="lightgray p-3 container-fluid mb-1 text-white">Lightgray</div>
+</div>
 
 <!-- cards -->
 <div class="container my-3">
+
+    <div class="center mb-3">
+        <span class="text-xxl">Cards</span>
+    </div>
+
     <div class="row gap-1">
 
         <div class="col-sm-12 col-md-6 col-lg-4">
@@ -240,7 +335,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card">
@@ -285,9 +379,13 @@
 </div>
 
 <!-- tables -->
-<!-- <div class="container">
+<div class="container">
 
-    <table class="table">
+    <div class="center mb-3">
+        <span class="text-xxl">Tables</span>
+    </div>
+
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th>Username</th>
@@ -314,48 +412,34 @@
         </tbody>
     </table>
 
-</div> -->
-
-<!-- <div class="container-fluid text-center orange text-white p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, placeat!</div> -->
-
-<!-- alerts -->
-<div class="container">
-    <div class="alert alert-dark">    
-     
-    <div class="alert-msg">
-        <span>Hello, please make sure your phone number is verified!</span>
-    </div>
-
-    <div class="alert-close">
-            <span class="bi bi-x-circle-fill"></span>
-    </div> 
-   
-    </div>
 </div>
 
 <!-- modals -->
-<!-- <div class="modal">
-    <div class="modal-box">
-        <div class="modal-content">
-            <div class="modal-title">
-                <span>Hello</span> 
-            </div>
-            <div class="modal-body">
-                Lorem ipsum dolor, 
-                sit amet consectetur adipisicing elit. 
-                Voluptatum, dignissimos. 
-                Ducimus ratione alias corrupti 
-                neque delectus nisi ad quasi dignissimos?
-            </div>
-            <div class="modal-footer">
-                <a href="#" class="btn red modal-close"><span class="">Close</span></a>
-            </div>
+<div class="modal" id="modal1">
+    <div class="modal-content">
+        <div class="modal-title">
+            <span>Hello</span> 
+        </div>
+        <div class="modal-body">
+            Lorem ipsum dolor, 
+            sit amet consectetur adipisicing elit. 
+            Voluptatum, dignissimos. 
+            Ducimus ratione alias corrupti 
+            neque delectus nisi ad quasi dignissimos?
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn red modal-close"><span class="">Close</span></a>
         </div>
     </div>
+</div>
 
-</div> -->
-
+<!-- grid row -->
 <div class="container">
+
+    <div class="center mb-3">
+        <span class="text-xxl">Grid</span>
+    </div>
+
     <div class="row gap-2">
 
         <div class="col-sm-12 col-md-6 col-lg-3">
@@ -364,8 +448,8 @@
                 <div class="mt-1">
                     <span>Lorem ipsum dolor sit amet.</span>  
                 </div>  
-                <div class="my-2 w-100">
-                    <a href class="btn gray">
+                <div class="row my-2">
+                    <a href class="btn gray col-12">
                         <i class="bi bi-three-dots"></i>
                     </a>
                 </div>
@@ -381,12 +465,9 @@
                 </div>  
 
                 <div class="row my-2">
-                    <div class="col-12">
-                        <a href="#!" class="btn gray w-100">
+                        <a href="#!" class="btn gray col-12">
                             <i class="bi bi-three-dots"></i>
                         </a>
-                    </div>
-  
                 </div>
 
              </section>
@@ -403,23 +484,32 @@
     </div>
 </div>
 
+
 <!-- outline buttons -->
-<div class="container">
+<!-- <div class="container center">
 
     <a href="#!" class="btn btn-outline outline-1 text-blue">Hello</a>
     <a href="#!" class="btn btn-outline outline-1 text-red">Hello</a>
     <a href="#!" class="btn btn-outline outline-1 text-green">Hello</a>
     <a href="#!" class="btn btn-outline outline-1 text-orange">Hello</a>           
-
+    <a href="#!" class="btn btn-outline outline-1 text-lightblue">Hello</a>           
 </div>
+
+<div class="container center">
+    <a href="#!" class="btn blue">Hello</a>
+    <a href="#!" class="btn red">Hello</a>
+    <a href="#!" class="btn green">Hello</a>
+    <a href="#!" class="btn orange">Hello</a>           
+    <a href="#!" class="btn lightblue">Hello</a>  
+</div> -->
 
 <!-- footer -->
 <section class="container-fluid footer dark text-white p-2">
 
     <div class="text-center mt-1">
-        <a href="#!" class="text-white btn blue"><i class="bi bi-facebook"></i> Facebook</a>
-        <a href="#!" class="text-white btn lightblue"><i class="bi bi-twitter"></i> Twitter</a>
-        <a href="#!" class="text-white btn red"><i class="bi bi-youtube"></i> Youtube</a>
+        <a href="#!" class="text-white btn blue btn-round"><i class="bi bi-facebook"></i></a>
+        <a href="#!" class="text-white btn btn-round lightblue"><i class="bi bi-twitter"></i> </a>
+        <a href="#!" class="text-white btn btn-round red"><i class="bi bi-youtube"></i></a>
     </div>
 
     <div class="center mt-3">
