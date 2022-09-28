@@ -34,8 +34,12 @@
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: left;
-    margin-right: 5px;
     font-weight: 500;
+}
+
+.logo {
+    margin-right: 20px;
+
 }
 
 .logo p {
@@ -54,8 +58,8 @@
 
 .nav-item {
 
- margin-inline: 5px;
-
+ margin-inline: 3px;
+   
 }
 
 .nav-item a {
@@ -68,15 +72,9 @@
 
 }
 
-.nav-item a:hover {
-    background: rgba(165, 165, 165, 0.5);
-    transition: 0.7s;
-}
-
 .navbar .right {
     margin-right: 10px;
 }
-
 
 /* navbar buttons */
 .nav-item a:is(.btn) {
@@ -88,22 +86,8 @@
     padding:7px;
     display: inline;
     margin:0;
+    width:auto;
 
-}
-
-.nav-item a:is(.btn):hover, 
-.nav-item button:is(.btn):hover {
-    color: var(--white);
-}
-
-
-/* if nav is white reset links to default */
-.navbar:is(.white) a:hover {
-    color: var(--dark);
-}
-
-.navbar:is(.white) a:is(.btn) {
-    color: var(--white);
 }
 
 .active {

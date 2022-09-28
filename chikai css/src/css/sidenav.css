@@ -1,5 +1,5 @@
 /* sidenav */
-.sidenav {
+  .sidenav-overlay {
 
     background: rgba(46, 46, 46, .5);
     margin: 0;
@@ -8,23 +8,27 @@
     top: 0;
     width: 100%;
     min-height: 100vh;
+    display:none;
+    z-index:999;
+
+  }
+
+.sidenav {
+
+    border-right: 1px solid var(--lightgray);
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+    background: var(--white);
+    translate: -300px 0px;
     z-index: 999;
-  
+    width:300px;
+
   }
-  
-  .sidenav-content {
-  
-      border-bottom: 2px solid var(--dark);
-      min-height: 100vh;
-      position: fixed;
-      top: 0;
-      margin: 0;
-      padding: 0;
-      color: var(--dark);  
-      background: var(--white);
-  
-  }
-  
+
   .sidenav-section {
   
       min-height: 70px;

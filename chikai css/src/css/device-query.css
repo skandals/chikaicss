@@ -1,7 +1,7 @@
 /* media device queries (should be fixed)*/
 
 /* mobile screens */
-@media screen and (max-width: 480px) {
+@media screen and (width <= 576px) {
 
     /* columns */
     .col-sm-1 {
@@ -79,7 +79,7 @@
 }
 
 /* tablet screen */
-@media screen and (min-width: 480px) {
+@media screen and (width > 576px)  {
 
     /* columns */
     .col-md-1 {
@@ -158,7 +158,7 @@
 }
 
 /* laptop screen*/
-@media screen and (min-width: 768px) {
+@media screen and (width > 992px) {
 
     /* columns */
     .col-lg-1 {
@@ -235,7 +235,7 @@
 }
 
 /* desktop screen*/
-@media screen and (min-width: 1200px) {
+@media screen and (width > 1200px) {
 
     /* columns */
     .col-xl-1 {

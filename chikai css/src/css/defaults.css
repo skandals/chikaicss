@@ -6,6 +6,7 @@ body {
     width: auto;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* remove default href, ul, li */
@@ -26,8 +27,6 @@ a, button  {
     padding: 0;
     margin:0;
     outline: none;
-    width: auto;
-    display: inline-block;
 
 }
 

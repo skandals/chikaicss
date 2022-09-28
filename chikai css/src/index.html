@@ -8,10 +8,42 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="../bootstrap icons/bootstrap-icons.css">
     <!-- <script src="js/index.js" defer></script> -->
-    <script src="js/dropdown.js" defer></script>
-
+    <script src="js/carousel.js" defer></script>
+    <script src="js/sidenav.js" defer></script>
 </head>
 <body>
+
+    <!-- icon menu -->
+<!-- <div class="icon-menu">
+
+    <ul class="icon-nav-menu">
+        <li class="icon-item">
+            <a href="#!" class="icon-link">
+                <span class="bi bi-house"></span>
+                    <span>Home</span>
+            </a>
+        </li>
+        <li class="icon-item"><a href="#!" class="icon-link">
+            <span class="bi bi-info"></span>
+            <span>Info</span>
+        </a>
+    </li>
+        <li class="icon-item">
+            <a href="#!" class="icon-link">
+                <span class="bi bi-person"></span>
+                <span>Profile</span>
+            </a>
+        </li>
+        <li class="icon-item">
+            <a href="#!" class="icon-link">
+                <i class="bi bi-door-open"></i>
+                <span>Logout</span>
+            </a>
+        </li>
+
+    </ul>
+
+</div> -->
     
 <!-- dropdown -->
 <!-- <ul class="dropdown" id="menuList">
@@ -21,7 +53,7 @@
 </ul> -->
 
     <!-- navbar -->
-    <div class="navbar dark expand-lg">
+    <div class="navbar white expand-lg">
         <div class="container-fluid text-dark">
 
             <div class="logo">
@@ -40,7 +72,7 @@
                     </li>
                     <!-- navbar-dropdown (to be fixed)-->
                     <li class="nav-item">
-                        <a href="#menuList" class="dropdown-btn dropdown-show">Menu</a>
+                        <a href="#slidenav" class="sidenav-btn">Menu</a>
                     </li>
 
                    <li class="nav-item d-md-none">
@@ -68,8 +100,7 @@
 
 
 <!-- sidenav -->
-<!-- <ul class="sidenav">
- <div class="sidenav-content">
+<ul class="sidenav" id="sidenav">
 
     <div class="sidenav-section">
         <div class="mx-2 my-2 text-center">    
@@ -112,30 +143,39 @@
         </a>
     </li>  
 
-  </div>
-</ul> -->
+</ul>
 
+<!-- carousel -->
+<div class="container text-center">
 
-<!-- icon menu -->
-<!-- <div class="icon-menu">
-    
-    <div class="nav-close">
-        <span class="close-btn"></span> 
-    </div>
-
-    <ul class="icon-nav-menu">
-        <li class="icon-item"><a href="#!" class="icon-link"><span class="bi bi-house"></span></a></li>
-        <li class="icon-item"><a href="#!" class="icon-link"><span class="bi bi-info"></span></a></li>
-        <li class="icon-item"><a href="#!" class="icon-link"><span class="bi bi-person"></span></a></li>
-        <li class="icon-item"><a href="#!" class="icon-link"><span class="bi bi-door-open"></span></a></li>
+    <ul class="carousel">
+        
+        <li class="carousel-item">
+            <img src="../images/1.jpg" class="" alt="">
+            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, error?</div>
+        </li>
+        <li class="carousel-item">
+            <img src="../images/2.jpg" class="" alt="">
+        </li>
+        <li class="carousel-item">
+            <img src="../images/3.jpg" class="" alt="">
+        </li>
+        <li class="carousel-item">
+            <img src="../images/4.jpg" class="" alt="">
+        </li>
+        <li class="carousel-item">
+            <img src="../images/5.jpg" class="" alt="">
+        </li>
+        <li class="carousel-item">
+            <img src="../images/6.jpg" class="" alt="">
+        </li>
 
     </ul>
 
-</div> -->
-
+</div>
 
 <!-- forms -->
-<div class="container text-center mx-5">
+<div class="container text-center">
 
     <div class="my-2"><span class="text-xl">Sign up</span></div>
 
@@ -186,26 +226,7 @@
             <div class="card">
                 <div class="card-content">
                     <div class="card-img">
-                        <img src="../images/morty.jpg" alt="">
-                    </div>
-                    <div class="card-title text-center">Hello</div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Libero, qui.
-                    </div>
-                     <div class="card-footer">
-                            <a href="#!" class="btn blue">edit</a>
-                            <a href="#!" class="btn red">remove</a>
-                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-img">
-                        <img src="../images/3.jpg" alt="">
+                        <img src="../images/2.jpg" alt="">
                     </div>
                     <div class="card-title text-center">Hello</div>
                     <div class="card-body">
@@ -219,6 +240,7 @@
                 </div>
             </div>
         </div>
+
 
         <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card">
@@ -305,7 +327,7 @@
     </div>
 
     <div class="alert-close">
-            <span class="alert-close-btn"></span>
+            <span class="bi bi-x-circle-fill"></span>
     </div> 
    
     </div>
@@ -342,9 +364,9 @@
                 <div class="mt-1">
                     <span>Lorem ipsum dolor sit amet.</span>  
                 </div>  
-                <div class="container-fluid my-2">
-                    <a href class="btn gray w-100">
-                        <i class="bi bi-three-dots text-xl"></i>
+                <div class="my-2 w-100">
+                    <a href class="btn gray">
+                        <i class="bi bi-three-dots"></i>
                     </a>
                 </div>
              </section>
@@ -353,14 +375,20 @@
         <div class="col-sm-12 col-md-6 col-lg-3">
             <img src="../images/morty.jpg" alt="" class="img-responsive">
             <section class="container-fluid">
+
                 <div class="text-center mt-1">
                     <span class="">Lorem ipsum dolor sit amet.</span>  
                 </div>  
-                <section class="text-center my-2">
-                    <a href="#!" class="btn gray w-100">
-                        <i class="bi bi-three-dots text-xl"></i>
-                    </a>
-                </section>
+
+                <div class="row my-2">
+                    <div class="col-12">
+                        <a href="#!" class="btn gray w-100">
+                            <i class="bi bi-three-dots"></i>
+                        </a>
+                    </div>
+  
+                </div>
+
              </section>
         </div>
 
@@ -369,12 +397,11 @@
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../images/morty.jpg" alt="" class="img-responsive">
+            <img src="../images/morty.jpg" loading="lazy"  alt="" class="img-responsive">
         </div>
 
     </div>
 </div>
-
 
 <!-- outline buttons -->
 <div class="container">
@@ -413,7 +440,6 @@
         <div class="spinner"></div>
     </div>
 </div> -->
-
 
 
 </body>

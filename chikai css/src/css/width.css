@@ -1,5 +1,9 @@
 
 /* width */
+.w-auto {
+    width: auto;
+}
+
 .w-25 {
     width: 25% !important; 
 }
