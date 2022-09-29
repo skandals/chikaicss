@@ -1,7 +1,6 @@
 /* icon menu */
 .icon-menu {
 
-    width: 100px;
     height: 100vh;
     background: var(--white);
     margin: 0;
@@ -9,6 +8,7 @@
     z-index: 1;
     position:fixed;
     top:0; 
+    left:0;
     /* animation: toggleIconMenu 2s linear;
     animation-iteration-count: initial;
     translate: -82px 0px; */
@@ -16,6 +16,7 @@
     border-left:none;
     border-block:none;
     overflow: auto;
+    overflow-x: hidden;
     
 }
 
@@ -37,33 +38,26 @@
   margin-block: 0.25em; 
   padding: 0;
   text-align: center;
-  border-radius: 5px;
+  overflow:hidden;
 
 }
 
-.icon-item .icon-link {
+.icon-link {
 
-   width:auto; 
-   height: 100%;
-   display: block;
-   padding:20px;
-   color: var(--dark) !important;
-   
-}
-
-.icon-link > * {
-
-    text-align: center;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
+width: auto; 
+height: 100%;
+display: grid;
+color: var(--dark) !important;
+font-size: 24px;
+padding:16px;
+text-align: center;
 
 }
+
 
 .icon-link:hover {
     background: var(--lightgray);
-    transition: all .5s;
+    transition: all .3s ease;
 }
 
 .icon-menu:is(.dark, .blue, .red, .green, .orange, .lightblue, .yellow, .gray, .darkgray, .purple, .pink) .icon-nav-menu
@@ -74,7 +68,7 @@
 .icon-menu:is(.dark, .blue, .red, .green, .orange, .lightblue, .yellow, .gray, .darkgray, .purple, .pink) .icon-nav-menu .icon-link:hover {
     color: var(--dark) !important;
     background-color: var(--white);
-    transition: all .5s;
+    transition: all .3s;
  }
 
 /* @keyframes toggleIconMenu {
