@@ -8,8 +8,8 @@ body {
     padding: 0;
     overflow-x: hidden;
     width: auto;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    box-sizing: content-box;
+    font-family: sans-serif, Arial;
 }
 
 /* remove default href, ul, li */
@@ -75,7 +75,7 @@ th {
 
 td {
     padding-block: 20px;
-    font-family: Roboto, sans-serif;
+    font-family: sans-serif, Roboto;
 }
 
 input, textarea {

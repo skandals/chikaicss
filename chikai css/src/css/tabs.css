@@ -1,0 +1,34 @@
+.tabs {
+    padding: 0;
+    margin: 0;
+    overflow-wrap: break-word;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.tabs .tab {
+    display: inline-block;
+}
+
+.tab {
+    margin-inline: 5px;
+}
+
+.tab a {
+    color: var(--blue);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.tabs .active {
+    border-bottom: 3px solid var(--blue);
+    transition: translate .3s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

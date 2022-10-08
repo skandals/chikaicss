@@ -4,11 +4,12 @@
 
     height:auto;
     width: 100%;
-    line-height: 70px;
     position: relative;
     box-shadow: 0px 10px 20px solid var(--gray);
-    box-sizing: border-box;
-    display: inline-grid;
+    line-height: var(--nav-height);
+    margin:0;
+    padding: 0;
+    display: grid;
 
 }
 
@@ -25,18 +26,29 @@
 .logo, 
 .logo span,
 .logo p,
-.logo i {
-    font-size: x-large;
+.logo i,
+.logo img
+{
+    font-size: 28px;
     color: var(--white);
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    float: left;
     font-weight: 500;
+    float:left;
+}
+
+.logo img {
+    position: relative;
+    top:calc(var(--nav-height) / 3.5);
+    object-fit: cover;
+    background-position: center;
+    width:calc(var(--nav-height) / 2.5); 
+    height:calc(var(--nav-height) / 2.5);
 }
 
 .logo {
-    margin-right: 20px;
-
+    margin-right: 25px;
+    padding: 0;
 }
 
 .logo p {
@@ -54,19 +66,15 @@
 }
 
 .nav-item {
-
- margin-inline: 3px;
-   
+    padding-inline: 10px;
 }
 
 .nav-item a {
-
     text-decoration: none;
     color: var(--lightgray);
     height: 100%;
     width: 100%;
     text-align: center;
-
 }
 
 .navbar .right {
@@ -75,18 +83,14 @@
 
 /* navbar buttons */
 .nav-item a:is(.btn) {
-
-    text-decoration: none;
-    border-radius: 3px;
-    color: rgba(255, 255, 255, 0.7);
-    text-align: center;
-    padding:7px;
-    display: inline;
-    margin:0;
     width:auto;
-
+    color:var(--white);
 }
 
-.active {
+.active-link {
     font-weight: 600;
+}
+
+.nav-item:hover {
+    background-color: rgba(119, 119, 119, 0.2);
 }

@@ -78,3 +78,25 @@
  - Added outlines
  - Fixed border width
  - Fixed padding and margin measurements(pixels)
+
+#15 Sept 2022
+
+- Added icon menu
+
+ #24 Sept 2022
+ 
+ - Added image carousel
+
+#30 Sept 2022
+
+- Added round buttons
+- Fixed sidenav and icon menu transitions
+
+#7 Oct 2022
+
+- Added modal fade effect
+- Added hover effects
+
+#8 Oct 2022
+
+- Added tabs

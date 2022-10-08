@@ -47,3 +47,6 @@
     color: var(--lightgreen) !important;
 }
 
+.text-navy {
+    color: var(--navy) !important;
+}

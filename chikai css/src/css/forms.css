@@ -56,7 +56,7 @@
 .navbar form .input-field {
     box-sizing: border-box;
     border: none;
-    margin-left: 5px;
+    margin-right:5px;
 }
 
 .navbar form .form-control {
@@ -66,14 +66,5 @@
     border-radius: 5px;
     border: thin solid var(--lightgray);
 
-}
-
-.navbar form button, 
-.navbar form input[type="submit"], 
-.navbar form a {
-    
-    height:35px;
-    border:none;
-    
 }
 
