@@ -1,19 +1,17 @@
 /* navbar (incomplete) */
 /* should be fixed with nav-menu alignment */
 .navbar {
-
-    height:auto;
+    height: calc(var(--nav-height) + 20px);
     width: 100%;
     position: relative;
     box-shadow: 0px 10px 20px solid var(--gray);
-    line-height: var(--nav-height);
+    line-height: calc(var(--nav-height) + 20px);
     margin:0;
     padding: 0;
     display: grid;
+    overflow: hidden;
 
 }
-
-/* align navbar items inline */
 
 /* if navbar is white */
 .navbar:is(.white) span,
@@ -29,7 +27,7 @@
 .logo i,
 .logo img
 {
-    font-size: 28px;
+    font-size: xx-large;
     color: var(--white);
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -39,7 +37,7 @@
 
 .logo img {
     position: relative;
-    top:calc(var(--nav-height) / 3.5);
+    top:calc(var(--nav-height) / 2.2);
     object-fit: cover;
     background-position: center;
     width:calc(var(--nav-height) / 2.5); 
@@ -78,7 +76,7 @@
 }
 
 .navbar .right {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 /* navbar buttons */

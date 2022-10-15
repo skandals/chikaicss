@@ -7,15 +7,24 @@
     <title>Chikai CSS</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="../bootstrap icons/bootstrap-icons.css">
+    <script src="js/fullnav.js" defer></script>
     <!-- <script src="js/carousel.js" defer></script> -->
     <!-- <script src="js/alerts.js" defer></script> -->
     <!-- <script src="js/sidenav.js" defer></script>
     <script src="js/modal.js" defer></script>
     <script src="js/icon-menu.js" defer></script> -->
-    <script src="js/dropdown.js" defer></script>
+    <!-- <script src="js/dropdown.js" defer></script> -->
     <!-- <script src="js/tabs.js" defer></script> -->
 </head>
 <body>
+    
+    <!-- full nav -->
+    <div class="fullnav slide-down" id="fullnav1">
+        <div class="fullnav-close">Close</div>
+        <div class="fullnav-item"><a href="#">Home</a></div>
+        <div class="fullnav-item"><a href="#">About</a></div>
+        <div class="fullnav-item"><a href="#">Contact</a></div>
+    </div>
 
     <!-- dropdown -->
 <ul class="dropdown" id="dropdown2">
@@ -23,6 +32,7 @@
     <li class="dropdown-item"><a href="#!" class="dropdown-link">Contact Us</a></li>
     <li class="dropdown-item"><a href="#!" class="dropdown-link">Profile</a></li>
 </ul>
+
 
 <!-- icon menu -->
 <!-- <div class="icon-menu" id="iconmenu1">
@@ -70,7 +80,8 @@
     <div class="container-fluid">
 
         <div class="logo">
-            <span class="bi bi-bootstrap"></span>
+            <!-- <img src="./icons/chikai_white.png" alt="" srcset=""> -->
+            <i class="bi bi-bootstrap"></i>
             <span>Chikai CSS</span>
         </div>
 
@@ -80,16 +91,17 @@
                     <a href="#" cc-target="modal1" class="nav-link active-link modal-btn">Home</a>
                 </li>
 
-                <li class="">
-                    <a href="#" cc-target="" class="btn red">About</a>
-                </li>
-                <!-- navbar-dropdown (to be fixed)-->
                 <li class="nav-item">
                     <a href="#" cc-target="sidenav1" class="sidenav-btn">Menu</a>
                 </li>
+                
+                <li class="">
+                    <a href="#" cc-target="" class="btn red">About</a>
+                </li>
 
-                <li class="nav-item right">
-                    <a href="#" cc-target="dropdown2" class="dropdown-btn"><i class="bi bi-list text-xl"></i></a>
+                <li class="right">
+                    <!-- navbar-dropdown (to be fixed)-->
+                    <a href="#" cc-target="fullnav1" class="fullnav-btn btn text-xl"><i class="bi bi-list"></i></a>
                 </li>
 
             </ul>
