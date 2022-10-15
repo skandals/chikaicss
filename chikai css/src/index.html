@@ -4,120 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Chikai CSS</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="../bootstrap icons/bootstrap-icons.css">
-    <!-- <script src="js/index.js" defer></script> -->
-    <script src="js/carousel.js" defer></script>
-    <script src="js/alerts.js" defer></script>
-    <script src="js/sidenav.js" defer></script>
+    <script src="js/fullnav.js" defer></script>
+    <!-- <script src="js/carousel.js" defer></script> -->
+    <!-- <script src="js/alerts.js" defer></script> -->
+    <!-- <script src="js/sidenav.js" defer></script>
     <script src="js/modal.js" defer></script>
-
+    <script src="js/icon-menu.js" defer></script> -->
+    <!-- <script src="js/dropdown.js" defer></script> -->
+    <!-- <script src="js/tabs.js" defer></script> -->
 </head>
 <body>
-
-    <!-- icon menu -->
-<-- <div class="icon-menu">
-
-    <ul class="icon-nav-menu">
-        <li class="icon-item">
-            <a href="#!" class="icon-link">
-                <span class="bi bi-house"></span>
-                    <span>Home</span>
-            </a>
-        </li>
-        <li class="icon-item"><a href="#!" class="icon-link">
-            <span class="bi bi-info"></span>
-            <span>Info</span>
-        </a>
-        </li>
-
-        <li class="icon-item">
-            <a href="#!" class="icon-link">
-                <span class="bi bi-person"></span>
-                <span>Profile</span>
-            </a>
-        </li>
-
-        <li class="icon-item">
-            <a href="#!" class="icon-link">
-                <span class="bi bi-wrench"></span>
-                <span>Settings</span>
-            </a>
-        </li>  
-
-        <li class="icon-item">
-            <a href="#!" class="icon-link">
-                <i class="bi bi-door-open"></i>
-                <span>Logout</span>
-            </a>
-        </li>
-
-    </ul>
-
-</div> -->
     
-<!-- dropdown -->
-<!-- <ul class="dropdown" id="menuList">
-    <li class="dropdown-item"><a href="#">Home</a></li>
-    <li class="dropdown-item"><a href="#">About</a></li>
-    <li class="dropdown-item"><a href="#">Contact</a></li>
-</ul> -->
-
-    <!-- navbar -->
-    <div class="navbar white expand-lg">
-        <div class="container-fluid text-dark">
-
-            <div class="logo">
-                <span class="bi bi-bootstrap"></span>
-                <span class="">Chikai CSS</span>
-            </div>
-
-                <ul class="nav-menu d-sm-none">
-                    
-                    <li class="nav-item">
-                        <a href="" cc-target="modal1" class="active modal-btn">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#fullimg" class="btn red">About</a>
-                    </li>
-                    <!-- navbar-dropdown (to be fixed)-->
-                    <li class="nav-item">
-                        <a href="" cc-target="sidenav1" class="sidenav-btn">Menu</a>
-                    </li>
-
-                   <li class="nav-item">
-                       <form method="post">
-   
-                               <div class="input-field">
-                                   <input type="text" class="form-control" placeholder="Username">
-                               </div>                            
-                               
-                               <div class="input-field">
-                                   <input type="submit" class="btn green" value="search" disabled="true">
-                               </div>
-
-                       </form>
-                    </li>
-
-                </ul>
-        </div>
+    <!-- full nav -->
+    <div class="fullnav slide-down" id="fullnav1">
+        <div class="fullnav-close">Close</div>
+        <div class="fullnav-item"><a href="#">Home</a></div>
+        <div class="fullnav-item"><a href="#">About</a></div>
+        <div class="fullnav-item"><a href="#">Contact</a></div>
     </div>
 
-    <!-- header -->
-<div class="container-fluid text-center red mb-3 p-3 shadow-sm">
+    <!-- dropdown -->
+<ul class="dropdown" id="dropdown2">
+    <li class="dropdown-item"><a href="#!" class="dropdown-link">My Settings</a></li>
+    <li class="dropdown-item"><a href="#!" class="dropdown-link">Contact Us</a></li>
+    <li class="dropdown-item"><a href="#!" class="dropdown-link">Profile</a></li>
+</ul>
+    
+<!-- navbar -->
+<div class="navbar dark">
+    <div class="container-fluid">
+
+        <div class="logo">
+            <!-- <img src="./icons/chikai_white.png" alt="" srcset=""> -->
+            <i class="bi bi-bootstrap"></i>
+            <span>Chikai CSS</span>
+        </div>
+
+            <ul class="nav-menu d-sm-none">
+                
+                <li class="nav-item">
+                    <a href="#" cc-target="modal1" class="nav-link active-link modal-btn">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" cc-target="sidenav1" class="sidenav-btn">Menu</a>
+                </li>
+                
+                <li class="">
+                    <a href="#" cc-target="" class="btn red">About</a>
+                </li>
+
+                <li class="right">
+                    <!-- navbar-dropdown (to be fixed)-->
+                    <a href="#" cc-target="fullnav1" class="fullnav-btn btn text-xl"><i class="bi bi-list"></i></a>
+                </li>
+
+            </ul>
+    </div>
+</div>
+
+<!-- header -->
+<div class="container-fluid text-center red mb-3 p-3 shadow-sm clearfix">
     <span class="text-white">Share your moments!</span>
 </div>
 
+<!-- tabs -->
+<!-- <div class="container my-5">
+    <ul class="tabs center">
+        <li class="tab"><a href="#" cc-target="pics">Sign up</a></li>
+        <li class="tab "><a href="#" cc-target="table">Login</a></li>
+        <li class="tab"><a href="#" cc-target="outlines">Settings</a></li>
+        <li class="tab"><a href="#" cc-target="outlines">Settings</a></li>
+
+    </ul>
+</div> -->
+
 <!-- sidenav -->
-<ul class="sidenav" id="sidenav1">
+<!-- <ul class="sidenav" id="sidenav1">
 
     <div class="sidenav-section">
         <div class="mx-2 my-2 text-center">    
 
             <div class="avatar">
-                <img src="images/1.jpg" width="200" height="200" />
+                <img src="images/1.jpg" width="100" height="100" />
             </div>  
             <div class="mx-3 my-3">
                 <span class="sidenav-title">Sfiso Nxumalo</span>
@@ -154,10 +126,10 @@
         </a>
     </li>  
 
-</ul>
+</ul> -->
 
 <!-- carousel -->
-<div class="container text-center">
+<!-- <div class="container text-center">
 
     <span class="text-xxl">Carousel</span>
 
@@ -185,10 +157,10 @@
 
     </ul>
 
-</div>
+</div> -->
 
 <!-- forms -->
-<div class="container text-center">
+<!-- <div class="container text-center">
 
     <div class="my-2"><span class="text-xxl">Forms</span></div>
 
@@ -212,15 +184,13 @@
         </div>
 
     </form>
-</div>
+</div> -->
 
 <!-- alerts -->
-
-<div class="center mb-3">
+<!-- <div class="center mb-3">
     <span class="text-xxl">Alerts</span>
 </div>
     
-
 <div class="container center">
     <div class="alert alert-green">    
      
@@ -289,10 +259,10 @@
     </div> 
    
     </div>
-</div>
+</div> -->
 
 <!-- color bars -->
-<div class="container my-5 text-center">
+<!-- <div class="container my-5 text-center">
 <div class="p-3 container-fluid mb-1 orange text-white">Orange</div>
 <div class="p-3 container-fluid mb-1 green text-white">Green</div>
 <div class="p-3 container-fluid mb-1 lightgreen text-white">Lightgreen</div>
@@ -306,10 +276,10 @@
 <div class="gray p-3 container-fluid my-1 text-white">Gray</div>
 <div class="darkgray p-3 container-fluid mb-1 text-white">Darkgray</div>
 <div class="lightgray p-3 container-fluid mb-1 text-white">Lightgray</div>
-</div>
+</div> -->
 
 <!-- cards -->
-<div class="container my-3">
+<!-- <div class="container my-3">
 
     <div class="center mb-3">
         <span class="text-xxl">Cards</span>
@@ -320,10 +290,48 @@
         <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card">
                 <div class="card-content">
-                    <div class="card-img">
-                        <img src="../images/2.jpg" alt="">
+                    <div class="card-img text-center py-3">
+                        <span class="text-xxl"><i class="bi bi-microsoft"></i></span>
                     </div>
-                    <div class="card-title text-center">Hello</div>
+                    <div class="card-title text-center p-0">Microsoft</div>
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Libero, qui.
+                    </div>
+                    <div class="card-footer">
+                    <a href="" class="btn blue">edit</a>
+                    <a href="" class="btn red">remove</a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-img text-center py-3">
+                        <span class="text-xxl"><i class="bi bi-apple"></i></span>
+                    </div>
+                    <div class="card-title text-center p-0">Apple</div>
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Libero, qui.
+                    </div>
+                    <div class="card-footer">
+                    <a href="" class="btn blue">edit</a>
+                    <a href="" class="btn red">remove</a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-img text-center py-3">
+                        <span class="text-xxl"><i class="bi bi-facebook"></i></span>
+                    </div>
+                    <div class="card-title text-center p-0">Facebook</div>
                     <div class="card-body">
                         Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Libero, qui.
@@ -359,6 +367,25 @@
             <div class="card">
                 <div class="card-content">
                     <div class="card-img">
+                        <img src="../images/6.jpg" alt="">
+                    </div>
+                    <div class="card-title text-center">Hello</div>
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Libero, qui.
+                    </div>
+                    <div class="card-footer">
+                    <a href="" class="btn blue">edit</a>
+                    <a href="" class="btn red">remove</a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-img">
                         <img src="../images/8.jpg" alt="">
                     </div>
                     <div class="card-title text-center">Hello</div>
@@ -376,18 +403,32 @@
         </div>
 
 </div>
-</div>
+</div> -->
+
+<!-- loading bar -->
+<!-- <div class="container">
+    <div class="loading-bar">
+        <div class="loading-progress blue"></div>
+    </div>
+</div> -->
+
+<!-- spinner -->
+<!-- <div class="container">
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+</div> -->
 
 <!-- tables -->
-<div class="container">
+<div class="container" id="table">
 
     <div class="center mb-3">
         <span class="text-xxl">Tables</span>
     </div>
 
-    <table class="table table-striped">
+    <table class="table text-center">
         <thead>
-            <tr>
+            <tr class="text-center"> 
                 <th>Username</th>
                 <th>Email</th>
                 <th>Occupation</th>
@@ -423,9 +464,7 @@
         <div class="modal-body">
             Lorem ipsum dolor, 
             sit amet consectetur adipisicing elit. 
-            Voluptatum, dignissimos. 
-            Ducimus ratione alias corrupti 
-            neque delectus nisi ad quasi dignissimos?
+            Voluptatum, dignissimos.
         </div>
         <div class="modal-footer">
             <a href="#" class="btn red modal-close"><span class="">Close</span></a>
@@ -434,7 +473,7 @@
 </div>
 
 <!-- grid row -->
-<div class="container">
+<div class="container" id="pics">
 
     <div class="center mb-3">
         <span class="text-xxl">Grid</span>
@@ -442,21 +481,22 @@
 
     <div class="row gap-2">
 
-        <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
              <img src="../images/morty.jpg" class="img-responsive">
              <section class="text-center">
                 <div class="mt-1">
                     <span>Lorem ipsum dolor sit amet.</span>  
                 </div>  
                 <div class="row my-2">
-                    <a href class="btn gray col-12">
+                    <a href="#!" cc-target="dropdown2" class="btn dropdown-btn gray col-12">
                         <i class="bi bi-three-dots"></i>
                     </a>
+
                 </div>
              </section>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <img src="../images/morty.jpg" alt="" class="img-responsive">
             <section class="container-fluid">
 
@@ -473,64 +513,74 @@
              </section>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <img src="../images/morty.jpg" alt="" class="img-responsive">
+            <section class="container-fluid">
+
+                <div class="text-center mt-1">
+                    <span class="">Lorem ipsum dolor sit amet.</span>  
+                </div>  
+
+                <div class="row my-2">
+                        <a href="#!" class="btn gray col-12">
+                            <i class="bi bi-three-dots"></i>
+                        </a>
+                </div>
+
+             </section>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <img src="../images/morty.jpg" loading="lazy"  alt="" class="img-responsive">
+            <section class="container-fluid">
+
+                <div class="text-center mt-1">
+                    <span class="">Lorem ipsum dolor sit amet.</span>  
+                </div>  
+
+                <div class="row my-2">
+                        <a href="#!" class="btn gray col-12">
+                            <i class="bi bi-three-dots"></i>
+                        </a>
+                </div>
+
+             </section>
         </div>
 
     </div>
 </div>
-
 
 <!-- outline buttons -->
-<!-- <div class="container center">
+<div class="container center" id="outlines">
 
-    <a href="#!" class="btn btn-outline outline-1 text-blue">Hello</a>
-    <a href="#!" class="btn btn-outline outline-1 text-red">Hello</a>
-    <a href="#!" class="btn btn-outline outline-1 text-green">Hello</a>
-    <a href="#!" class="btn btn-outline outline-1 text-orange">Hello</a>           
-    <a href="#!" class="btn btn-outline outline-1 text-lightblue">Hello</a>           
+    <a href="#!" class="btn btn-outline outline-1 hover-blue text-blue">Hello</a>
+    <a href="#!" class="btn btn-outline outline-1 hover-red text-red">Hello</a>
+    <a href="#!" class="btn btn-outline outline-1 hover-green text-green">Hello</a>
+    <a href="#!" class="btn btn-outline outline-1 hover-orange text-orange">Hello</a>           
+    <a href="#!" class="btn btn-outline outline-1 hover-lightblue text-lightblue">Hello</a>           
+    <div class="container center">
+        <a href="#!" class="btn blue">Hello</a>
+        <a href="#!" class="btn red">Hello</a>
+        <a href="#!" class="btn green">Hello</a>
+        <a href="#!" class="btn orange">Hello</a>           
+        <a href="#!" class="btn lightblue">Hello</a>  
+    </div>
 </div>
-
-<div class="container center">
-    <a href="#!" class="btn blue">Hello</a>
-    <a href="#!" class="btn red">Hello</a>
-    <a href="#!" class="btn green">Hello</a>
-    <a href="#!" class="btn orange">Hello</a>           
-    <a href="#!" class="btn lightblue">Hello</a>  
-</div> -->
 
 <!-- footer -->
-<section class="container-fluid footer dark text-white p-2">
+<footer class="w-100 dark text-white p-2">
 
     <div class="text-center mt-1">
-        <a href="#!" class="text-white btn blue btn-round"><i class="bi bi-facebook"></i></a>
-        <a href="#!" class="text-white btn btn-round lightblue"><i class="bi bi-twitter"></i> </a>
-        <a href="#!" class="text-white btn btn-round red"><i class="bi bi-youtube"></i></a>
+        <a href="#!" class="text-white btn btn-round p-1 round-50 blue"><i class="bi bi-facebook justify-content-center align-items-center"></i></a>
+        <a href="#!" class="text-white btn btn-round p-1 round-100 lightblue"><i class="bi bi-twitter justify-content-center align-items-center"></i> </a>
+        <a href="#!" class="text-white btn btn-round p-1 round-100 navy"><i class="bi bi-linkedin justify-content-center align-items-center"></i></a>
     </div>
 
-    <div class="center mt-3">
-        <span class="text-upper">esk studio &copy; 2022</span>
+    <div class="center my-2">
+        <span class="text-upper text-md">esk studio &copy; 2022</span>
     </div>
 
-</section>
-
-<!-- loading bar -->
-<!-- <div class="container">
-    <div class="loading-bar">
-        <div class="loading-progress blue"></div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="spinner-container">
-        <div class="spinner"></div>
-    </div>
-</div> -->
-
+</footer>
 
 </body>
 </html>

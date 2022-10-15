@@ -59,3 +59,7 @@
 .white {
     background: var(--white) !important;
 }
+
+.navy {
+    background: var(--navy) !important;
+}

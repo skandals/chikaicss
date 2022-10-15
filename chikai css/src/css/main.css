@@ -1,7 +1,8 @@
-@import url('colors.css');
+@import url('variables.css');
 @import url('defaults.css');
 @import url('bg-colors.css');
 @import url('text-colors.css');
+@import url('hovers.css');
 @import url('containers.css');
 @import url('buttons.css');
 @import url('align-utils.css');
@@ -21,7 +22,7 @@
 @import url('chikai-grid.css');
 @import url('device-query.css');
 @import url('navbars.css');
-@import url('nav-dropdown.css');
+@import url('dropdowns.css');
 @import url('sidenav.css');
 @import url('forms.css');
 @import url('cards.css');
@@ -33,6 +34,8 @@
 @import url('icon-menu.css');
 @import url('carousel.css');
 @import url('modals.css');
+@import url('tabs.css');
+@import url('fullscreen-nav.css');
 
 
 

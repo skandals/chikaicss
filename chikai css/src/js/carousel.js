@@ -1,6 +1,6 @@
-const images = document.querySelectorAll('.carousel-item img');
-const carouselCont = document.querySelector('.carousel');
-const li = carouselCont.children;
+ const images = document.querySelectorAll('.carousel-item img');
+ const carouselCont = document.querySelector('.carousel');
+ const li = carouselCont.children;
 
 class Carousel {
 
@@ -84,3 +84,5 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
 })
+
+// export {Carousel, images, carouselCont, li};
