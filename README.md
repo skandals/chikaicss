@@ -100,3 +100,8 @@
 #8 Oct 2022
 
 - Added tabs
+
+#9 Oct 2022
+
+- Added full-screen navbar
+- Added navy color
