@@ -11,8 +11,10 @@
     display: none;
     overflow-x: hidden;
     height:0px;
-    transition: height 1s ease-in-out;
-
+    box-shadow: 0px 2px 3px var(--whitegray);
+    top:0;
+    left:0;
+    
 }
 
 .dropdown-link:hover {
@@ -20,20 +22,24 @@
 }
 
 .dropdown-item {
-    border-bottom: thin solid var(--lightgray);
+    border-top: thin solid var(--lightgray);
+}
+
+.dropdown-item:first-child {
+    border-top:none;
 }
 
 .dropdown-link {
-    padding: 10px;
-    color: var(--blue);
-    width: 90%;
-    text-align: center !important;
+    padding: 15px;
+    color: var(--dark);
+    width: 100%;
     text-overflow: clip;
-    overflow-wrap: normal;
+    overflow-wrap:break-word;
 }
 
 .show {
     display: block;
+    transition: height 1s ease-in-out;
 }
 
 :focus-within(.dropdown) {

@@ -1,4 +1,3 @@
-/* navbar (incomplete) */
 /* should be fixed with nav-menu alignment */
 .navbar {
     height: calc(var(--nav-height) + 20px);
@@ -9,16 +8,8 @@
     margin:0;
     padding: 0;
     display: grid;
-    overflow: hidden;
+    overflow-x: hidden;
 
-}
-
-/* if navbar is white */
-.navbar:is(.white) span,
-.navbar:is(.white) a,
-.logo *
- {
-    color: var(--dark);
 }
 
 .logo, 
@@ -28,7 +19,6 @@
 .logo img
 {
     font-size: xx-large;
-    color: var(--white);
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
@@ -47,10 +37,8 @@
 .logo {
     margin-right: 25px;
     padding: 0;
-}
-
-.logo p {
     margin-block:0;
+
 }
 
 .nav-menu {
@@ -69,14 +57,13 @@
 
 .nav-item a {
     text-decoration: none;
-    color: var(--lightgray);
     height: 100%;
     width: 100%;
     text-align: center;
 }
 
 .navbar .right {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 /* navbar buttons */
@@ -86,9 +73,28 @@
 }
 
 .active-link {
-    font-weight: 600;
+    font-weight: 550;
 }
 
 .nav-item:hover {
-    background-color: rgba(119, 119, 119, 0.2);
+    background-color: rgba(161, 161, 161, 0.375);
+    transition: all .3s;
+}
+
+.navbar:not(.white) .logo *,
+.navbar:not(.white) *
+{
+    color: var(--white);
+}
+
+/* if navbar is white */
+.navbar *,
+.logo > *
+ {
+    color: var(--dark);
+}
+
+.sticky {
+    position: sticky;
+    top:0;
 }

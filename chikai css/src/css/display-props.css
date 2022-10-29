@@ -23,3 +23,194 @@
 .d-inline-flex {
     display: inline-flex !important;
 }
+
+/*extra small screens */
+@media screen and (width < 576px) {
+
+    /* display */
+    .d-xs-none {
+        display: none;
+    }
+
+    .d-xs-block {
+        display: block;
+    }
+
+    .d-xs-inline {
+        display: inline;
+    }
+
+    .d-xs-inline-block {
+        display: inline-block;
+    }
+
+    .d-xs-inline-flex {
+        display: inline-flex;
+    }
+
+    .d-xs-flex {
+        display: flex;
+    }
+
+    .d-xs-grid {
+        display: grid;
+    }
+
+    .d-xs-inline-grid {
+        display: inline-grid;
+    }
+
+}
+
+/* small screens */
+@media screen and (width >= 576px) {
+
+    /* display */
+    .d-sm-none {
+        display: none;
+    }
+
+    .d-sm-block {
+        display: block;
+    }
+
+    .d-sm-inline {
+        display: inline;
+    }
+
+    .d-sm-inline-block {
+        display: inline-block;
+    }
+
+    .d-sm-inline-flex {
+        display: inline-flex;
+    }
+
+    .d-sm-flex {
+        display: flex;
+    }
+
+    .d-sm-grid {
+        display: grid;
+    }
+   
+    .d-sm-inline-grid {
+        display: inline-grid;
+    }
+ 
+}
+
+/* medium screen */
+@media screen and (width >= 768px)  {
+
+/* display */
+.d-md-none {
+    display: none;
+}
+
+.d-md-block {
+    display: block;
+}
+
+.d-md-inline {
+    display: inline;
+}
+
+.d-md-inline-block {
+    display: inline-block;
+}
+
+.d-md-inline-flex {
+    display: inline-flex;
+}
+
+.d-md-flex {
+    display: flex;
+}
+
+.d-md-grid {
+    display: grid;
+}
+
+.d-md-inline-grid {
+    display: inline-grid;
+}
+
+
+}
+
+/* large screen*/
+@media screen and (width >= 992px) {
+    /* display */
+    .d-lg-none {
+        display: none;
+    }
+
+    .d-lg-block {
+        display: block;
+    }
+
+    .d-lg-inline {
+        display: inline;
+    }
+
+    .d-lg-inline-block {
+        display: inline-block;
+    }
+
+    .d-lg-inline-flex {
+        display: inline-flex;
+    }
+
+    .d-lg-flex {
+        display: flex;
+    }
+
+    .d-lg-grid {
+        display: grid;
+    }
+
+    .d-lg-inline-grid {
+        display: inline-grid;
+    }
+
+}
+
+/* xl screen*/
+@media screen and (width >= 1200px) {
+
+    /* display */
+    .d-xl-none {
+        display: none;
+    }
+
+    .d-xl-block {
+        display: block;
+    }
+
+    .d-xl-inline {
+        display: inline;
+    }
+
+    .d-xl-inline-block {
+        display: inline-block;
+    }
+
+    .d-xl-inline-flex {
+        display: inline-flex;
+    }
+
+    .d-xl-flex {
+        display: flex;
+    }
+
+    .d-xl-grid {
+        display: grid;
+    }
+    
+    .d-xl-inline-grid {
+        display: inline-grid;
+    }
+
+}
+    

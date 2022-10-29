@@ -6,8 +6,8 @@
 
 .spinner {
     content: "";
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     border: 10px solid transparent;    
     border-bottom-color: var(--blue);
     border-top-color: var(--blue);
