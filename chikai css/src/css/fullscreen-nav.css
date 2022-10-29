@@ -35,6 +35,7 @@
     padding: 20px;
 }
 
+/* should be fixed */
 .fullnav-item a:hover {
     background: rgba(172, 172, 172, 0.7);
     transition: all .3s;

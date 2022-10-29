@@ -105,3 +105,8 @@
 
 - Added full-screen navbar
 - Added navy color
+
+#15 Oct 2022
+
+- Added bottom, left , right and top classes
+- Added border block and border inline

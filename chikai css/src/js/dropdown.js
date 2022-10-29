@@ -19,14 +19,14 @@ dropdowns.forEach(dropdown => {
                         dropdownElem.classList.add('show');
                         dropdownElem.style.height = 'auto';
                         
-                        if(dropdownElem.offsetWidth <= document.body.offsetWidth) {
-                            dropdownElem.style.top = e.target.offsetTop+35+'px';
+                        dropdownElem.style.top = e.target.offsetTop+38+'px';
+
+                        // if(dropdownElem.offsetWidth < dropdownBtn.offsetWidth) {
                             dropdownElem.style.left = e.target.offsetLeft+'px';
-                        }
-                        else if(dropdownElem.offsetLeft >= document.body.scrollWidth) {
-                            dropdownElem.style.left = e.target.offsetLeft-300+'px';       
-                        }
-                        
+                        // }
+                        // else {
+                        //     dropdownElem.style.left = e.target.offsetLeft-100+'px';       
+                        // }
                     }
 
                 }
@@ -36,3 +36,14 @@ dropdowns.forEach(dropdown => {
         })
         
 })   
+
+window.addEventListener('click', e => {
+
+    if(!e.target.matches('.dropdown-btn')) {
+        dropdowns.forEach(dropdown => {
+            if(dropdown.classList.contains('show')) 
+                dropdown.classList.remove('show');    
+        })
+    }
+
+})

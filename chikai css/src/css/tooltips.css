@@ -1,0 +1,21 @@
+.tooltip:hover::after {
+    content: attr(cc-tooltip);
+    background-color: var(--darkgray) !important;
+    max-height: 50px;
+    width: fit-content;
+    position: fixed;
+    transition: all 5s ease;
+    color:white;
+    translate: -50% -100% ;
+    padding: 10px;
+    border-radius: 5px;
+    transform-origin: bottom center;
+    /* opacity: .9; */
+    overflow: hidden;
+    overflow-wrap: nowrap;
+    font-style: normal;
+    text-overflow: ellipsis;
+    text-align: center;
+
+}
+

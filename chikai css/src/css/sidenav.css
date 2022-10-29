@@ -16,7 +16,7 @@
 
 .sidenav {
 
-    border-right: 1px solid var(--lightgray);
+    border-right: 1px solid var(--gray);
     min-height: 100vh;
     position: fixed;
     top: 0;

@@ -12,5 +12,14 @@
    border-radius: 100%;
    object-fit: cover;
    background-position: center;
-   
+
 }
+
+/* img thumbnails */
+.img-thumbnail {
+
+    border: thin solid var(--lightgray);
+    padding: 5px;
+    border-radius: 5px;
+    
+}   
